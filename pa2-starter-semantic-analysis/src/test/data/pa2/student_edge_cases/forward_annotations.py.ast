@@ -1,0 +1,163 @@
+{
+  "kind" : "Program",
+  "location" : [ 2, 1, 12, 14 ],
+  "declarations" : [ {
+    "kind" : "VarDef",
+    "location" : [ 2, 1, 2, 10 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 2, 1, 2, 3 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 2, 1, 2, 1 ],
+        "name" : "x"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 2, 3, 2, 3 ],
+        "className" : "A"
+      }
+    },
+    "value" : {
+      "kind" : "NoneLiteral",
+      "location" : [ 2, 7, 2, 10 ]
+    }
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 3, 1, 4, 16 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 3, 5, 3, 5 ],
+      "name" : "f"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 3, 7, 3, 9 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 3, 7, 3, 7 ],
+        "name" : "a"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 3, 9, 3, 9 ],
+        "className" : "B"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ListType",
+      "location" : [ 3, 15, 3, 17 ],
+      "elementType" : {
+        "kind" : "ClassType",
+        "location" : [ 3, 16, 3, 16 ],
+        "className" : "C"
+      }
+    },
+    "declarations" : [ ],
+    "statements" : [ {
+      "kind" : "ReturnStmt",
+      "location" : [ 4, 5, 4, 15 ],
+      "value" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 4, 12, 4, 15 ]
+      }
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 5, 1, 6, 9 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 5, 7, 5, 7 ],
+      "name" : "A"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 5, 9, 5, 14 ],
+      "name" : "object"
+    },
+    "declarations" : [ ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 7, 1, 8, 9 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 7, 7, 7, 7 ],
+      "name" : "B"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 7, 9, 7, 9 ],
+      "name" : "A"
+    },
+    "declarations" : [ ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 9, 1, 10, 9 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 9, 7, 9, 7 ],
+      "name" : "C"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 9, 9, 9, 9 ],
+      "name" : "B"
+    },
+    "declarations" : [ ]
+  } ],
+  "statements" : [ {
+    "kind" : "AssignStmt",
+    "location" : [ 11, 1, 11, 7 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 11, 1, 11, 1 ],
+      "name" : "x"
+    } ],
+    "value" : {
+      "kind" : "CallExpr",
+      "location" : [ 11, 5, 11, 7 ],
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 11, 5, 11, 5 ],
+        "name" : "B"
+      },
+      "args" : [ ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 12, 1, 12, 13 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 12, 1, 12, 13 ],
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 12, 1, 12, 5 ],
+        "name" : "print"
+      },
+      "args" : [ {
+        "kind" : "CallExpr",
+        "location" : [ 12, 7, 12, 12 ],
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 12, 7, 12, 7 ],
+          "name" : "f"
+        },
+        "args" : [ {
+          "kind" : "CallExpr",
+          "location" : [ 12, 9, 12, 11 ],
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 12, 9, 12, 9 ],
+            "name" : "C"
+          },
+          "args" : [ ]
+        } ]
+      } ]
+    }
+  } ],
+  "errors" : {
+    "errors" : [ ],
+    "kind" : "Errors",
+    "location" : [ 0, 0, 0, 0 ]
+  }
+}

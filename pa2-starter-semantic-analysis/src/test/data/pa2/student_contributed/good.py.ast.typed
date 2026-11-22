@@ -1,0 +1,5509 @@
+{
+  "kind" : "Program",
+  "location" : [ 8, 1, 202, 21 ],
+  "declarations" : [ {
+    "kind" : "VarDef",
+    "location" : [ 8, 1, 8, 14 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 8, 1, 8, 10 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 8, 1, 8, 5 ],
+        "name" : "count"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 8, 8, 8, 10 ],
+        "className" : "int"
+      }
+    },
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 8, 14, 8, 14 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 0
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 9, 1, 9, 21 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 9, 1, 9, 17 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 9, 1, 9, 12 ],
+        "name" : "total_weight"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 9, 15, 9, 17 ],
+        "className" : "int"
+      }
+    },
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 9, 21, 9, 21 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 0
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 10, 1, 10, 21 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 10, 1, 10, 13 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 10, 1, 10, 7 ],
+        "name" : "verbose"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 10, 10, 10, 13 ],
+        "className" : "bool"
+      }
+    },
+    "value" : {
+      "kind" : "BooleanLiteral",
+      "location" : [ 10, 17, 10, 21 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "bool"
+      },
+      "value" : false
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 11, 1, 11, 26 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 11, 1, 11, 13 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 11, 1, 11, 8 ],
+        "name" : "zoo_name"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 11, 11, 11, 13 ],
+        "className" : "str"
+      }
+    },
+    "value" : {
+      "kind" : "StringLiteral",
+      "location" : [ 11, 17, 11, 26 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "str"
+      },
+      "value" : "ChocoZoo"
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 12, 1, 12, 21 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 12, 1, 12, 14 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 12, 1, 12, 6 ],
+        "name" : "keeper"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 12, 9, 12, 14 ],
+        "className" : "object"
+      }
+    },
+    "value" : {
+      "kind" : "NoneLiteral",
+      "location" : [ 12, 18, 12, 21 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      }
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 13, 1, 13, 21 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 13, 1, 13, 14 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 13, 1, 13, 7 ],
+        "name" : "weights"
+      },
+      "type" : {
+        "kind" : "ListType",
+        "location" : [ 13, 10, 13, 14 ],
+        "elementType" : {
+          "kind" : "ClassType",
+          "location" : [ 13, 11, 13, 13 ],
+          "className" : "int"
+        }
+      }
+    },
+    "value" : {
+      "kind" : "NoneLiteral",
+      "location" : [ 13, 18, 13, 21 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      }
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 14, 1, 14, 20 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 14, 1, 14, 13 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 14, 1, 14, 4 ],
+        "name" : "grid"
+      },
+      "type" : {
+        "kind" : "ListType",
+        "location" : [ 14, 7, 14, 13 ],
+        "elementType" : {
+          "kind" : "ListType",
+          "location" : [ 14, 8, 14, 12 ],
+          "elementType" : {
+            "kind" : "ClassType",
+            "location" : [ 14, 9, 14, 11 ],
+            "className" : "int"
+          }
+        }
+      }
+    },
+    "value" : {
+      "kind" : "NoneLiteral",
+      "location" : [ 14, 17, 14, 20 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      }
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 15, 1, 15, 19 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 15, 1, 15, 12 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 15, 1, 15, 5 ],
+        "name" : "names"
+      },
+      "type" : {
+        "kind" : "ListType",
+        "location" : [ 15, 8, 15, 12 ],
+        "elementType" : {
+          "kind" : "ClassType",
+          "location" : [ 15, 9, 15, 11 ],
+          "className" : "str"
+        }
+      }
+    },
+    "value" : {
+      "kind" : "NoneLiteral",
+      "location" : [ 15, 16, 15, 19 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      }
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 16, 1, 16, 29 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 16, 1, 16, 22 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 16, 1, 16, 12 ],
+        "name" : "first_animal"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 16, 15, 16, 22 ],
+        "className" : "Animal"
+      }
+    },
+    "value" : {
+      "kind" : "NoneLiteral",
+      "location" : [ 16, 26, 16, 29 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      }
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 17, 1, 17, 20 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 17, 1, 17, 13 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 17, 1, 17, 4 ],
+        "name" : "pens"
+      },
+      "type" : {
+        "kind" : "ListType",
+        "location" : [ 17, 7, 17, 13 ],
+        "elementType" : {
+          "kind" : "ClassType",
+          "location" : [ 17, 8, 17, 12 ],
+          "className" : "Pen"
+        }
+      }
+    },
+    "value" : {
+      "kind" : "NoneLiteral",
+      "location" : [ 17, 17, 17, 20 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      }
+    }
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 21, 1, 47, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 21, 7, 21, 12 ],
+      "name" : "Animal"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 21, 14, 21, 19 ],
+      "name" : "object"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 22, 5, 22, 18 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 22, 5, 22, 13 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 22, 5, 22, 8 ],
+          "name" : "name"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 22, 11, 22, 13 ],
+          "className" : "str"
+        }
+      },
+      "value" : {
+        "kind" : "StringLiteral",
+        "location" : [ 22, 17, 22, 18 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "value" : ""
+      }
+    }, {
+      "kind" : "VarDef",
+      "location" : [ 23, 5, 23, 19 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 23, 5, 23, 15 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 23, 5, 23, 10 ],
+          "name" : "weight"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 23, 13, 23, 15 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 23, 19, 23, 19 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 0
+      }
+    }, {
+      "kind" : "VarDef",
+      "location" : [ 24, 5, 24, 23 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 24, 5, 24, 16 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 24, 5, 24, 10 ],
+          "name" : "hungry"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 24, 13, 24, 16 ],
+          "className" : "bool"
+        }
+      },
+      "value" : {
+        "kind" : "BooleanLiteral",
+        "location" : [ 24, 20, 24, 23 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "bool"
+        },
+        "value" : true
+      }
+    }, {
+      "kind" : "VarDef",
+      "location" : [ 25, 5, 25, 27 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 25, 5, 25, 20 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 25, 5, 25, 10 ],
+          "name" : "friend"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 25, 13, 25, 20 ],
+          "className" : "Animal"
+        }
+      },
+      "value" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 25, 24, 25, 27 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "<None>"
+        }
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 27, 5, 28, 30 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 27, 9, 27, 16 ],
+        "name" : "__init__"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 27, 18, 27, 31 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 27, 18, 27, 21 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 27, 24, 27, 31 ],
+          "className" : "Animal"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 27, 33, 27, 33 ],
+        "className" : "<None>"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "AssignStmt",
+        "location" : [ 28, 9, 28, 29 ],
+        "targets" : [ {
+          "kind" : "MemberExpr",
+          "location" : [ 28, 9, 28, 17 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "object" : {
+            "kind" : "Identifier",
+            "location" : [ 28, 9, 28, 12 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            },
+            "name" : "self"
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 28, 14, 28, 17 ],
+            "name" : "name"
+          }
+        } ],
+        "value" : {
+          "kind" : "StringLiteral",
+          "location" : [ 28, 21, 28, 29 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "unknown"
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 30, 5, 31, 21 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 30, 9, 30, 13 ],
+        "name" : "sound"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 30, 15, 30, 28 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 30, 15, 30, 18 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 30, 21, 30, 28 ],
+          "className" : "Animal"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 30, 34, 30, 36 ],
+        "className" : "str"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 31, 9, 31, 20 ],
+        "value" : {
+          "kind" : "StringLiteral",
+          "location" : [ 31, 16, 31, 20 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "..."
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 33, 5, 34, 51 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 33, 9, 33, 16 ],
+        "name" : "describe"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 33, 18, 33, 31 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 33, 18, 33, 21 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 33, 24, 33, 31 ],
+          "className" : "Animal"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 33, 37, 33, 39 ],
+        "className" : "str"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 34, 9, 34, 50 ],
+        "value" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 34, 16, 34, 50 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "left" : {
+            "kind" : "BinaryExpr",
+            "location" : [ 34, 16, 34, 35 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "left" : {
+              "kind" : "MemberExpr",
+              "location" : [ 34, 16, 34, 24 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              },
+              "object" : {
+                "kind" : "Identifier",
+                "location" : [ 34, 16, 34, 19 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                },
+                "name" : "self"
+              },
+              "member" : {
+                "kind" : "Identifier",
+                "location" : [ 34, 21, 34, 24 ],
+                "name" : "name"
+              }
+            },
+            "operator" : "+",
+            "right" : {
+              "kind" : "StringLiteral",
+              "location" : [ 34, 28, 34, 35 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              },
+              "value" : " says "
+            }
+          },
+          "operator" : "+",
+          "right" : {
+            "kind" : "MethodCallExpr",
+            "location" : [ 34, 39, 34, 50 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "method" : {
+              "kind" : "MemberExpr",
+              "location" : [ 34, 39, 34, 48 ],
+              "inferredType" : {
+                "kind" : "FuncType",
+                "parameters" : [ {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                } ],
+                "returnType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "str"
+                }
+              },
+              "object" : {
+                "kind" : "Identifier",
+                "location" : [ 34, 39, 34, 42 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                },
+                "name" : "self"
+              },
+              "member" : {
+                "kind" : "Identifier",
+                "location" : [ 34, 44, 34, 48 ],
+                "name" : "sound"
+              }
+            },
+            "args" : [ ]
+          }
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 36, 5, 44, 27 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 36, 9, 36, 12 ],
+        "name" : "feed"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 36, 14, 36, 27 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 36, 14, 36, 17 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 36, 20, 36, 27 ],
+          "className" : "Animal"
+        }
+      }, {
+        "kind" : "TypedVar",
+        "location" : [ 36, 30, 36, 40 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 36, 30, 36, 35 ],
+          "name" : "amount"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 36, 38, 36, 40 ],
+          "className" : "int"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 36, 46, 36, 48 ],
+        "className" : "int"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "IfStmt",
+        "location" : [ 37, 9, 44, 8 ],
+        "condition" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 37, 12, 37, 22 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "bool"
+          },
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 37, 12, 37, 17 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "amount"
+          },
+          "operator" : "<=",
+          "right" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 37, 22, 37, 22 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "value" : 0
+          }
+        },
+        "thenBody" : [ {
+          "kind" : "ReturnStmt",
+          "location" : [ 38, 13, 38, 30 ],
+          "value" : {
+            "kind" : "MemberExpr",
+            "location" : [ 38, 20, 38, 30 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 38, 20, 38, 23 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              },
+              "name" : "self"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 38, 25, 38, 30 ],
+              "name" : "weight"
+            }
+          }
+        } ],
+        "elseBody" : [ {
+          "kind" : "IfStmt",
+          "location" : [ 39, 9, 44, 8 ],
+          "condition" : {
+            "kind" : "MemberExpr",
+            "location" : [ 39, 14, 39, 24 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "bool"
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 39, 14, 39, 17 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              },
+              "name" : "self"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 39, 19, 39, 24 ],
+              "name" : "hungry"
+            }
+          },
+          "thenBody" : [ {
+            "kind" : "AssignStmt",
+            "location" : [ 40, 13, 40, 31 ],
+            "targets" : [ {
+              "kind" : "MemberExpr",
+              "location" : [ 40, 13, 40, 23 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "bool"
+              },
+              "object" : {
+                "kind" : "Identifier",
+                "location" : [ 40, 13, 40, 16 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                },
+                "name" : "self"
+              },
+              "member" : {
+                "kind" : "Identifier",
+                "location" : [ 40, 18, 40, 23 ],
+                "name" : "hungry"
+              }
+            } ],
+            "value" : {
+              "kind" : "BooleanLiteral",
+              "location" : [ 40, 27, 40, 31 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "bool"
+              },
+              "value" : false
+            }
+          }, {
+            "kind" : "AssignStmt",
+            "location" : [ 41, 13, 41, 51 ],
+            "targets" : [ {
+              "kind" : "MemberExpr",
+              "location" : [ 41, 13, 41, 23 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "object" : {
+                "kind" : "Identifier",
+                "location" : [ 41, 13, 41, 16 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                },
+                "name" : "self"
+              },
+              "member" : {
+                "kind" : "Identifier",
+                "location" : [ 41, 18, 41, 23 ],
+                "name" : "weight"
+              }
+            } ],
+            "value" : {
+              "kind" : "BinaryExpr",
+              "location" : [ 41, 27, 41, 51 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "left" : {
+                "kind" : "MemberExpr",
+                "location" : [ 41, 27, 41, 37 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "object" : {
+                  "kind" : "Identifier",
+                  "location" : [ 41, 27, 41, 30 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "Animal"
+                  },
+                  "name" : "self"
+                },
+                "member" : {
+                  "kind" : "Identifier",
+                  "location" : [ 41, 32, 41, 37 ],
+                  "name" : "weight"
+                }
+              },
+              "operator" : "+",
+              "right" : {
+                "kind" : "BinaryExpr",
+                "location" : [ 41, 41, 41, 51 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "left" : {
+                  "kind" : "Identifier",
+                  "location" : [ 41, 41, 41, 46 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  },
+                  "name" : "amount"
+                },
+                "operator" : "//",
+                "right" : {
+                  "kind" : "IntegerLiteral",
+                  "location" : [ 41, 51, 41, 51 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  },
+                  "value" : 2
+                }
+              }
+            }
+          } ],
+          "elseBody" : [ {
+            "kind" : "AssignStmt",
+            "location" : [ 43, 13, 43, 50 ],
+            "targets" : [ {
+              "kind" : "MemberExpr",
+              "location" : [ 43, 13, 43, 23 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "object" : {
+                "kind" : "Identifier",
+                "location" : [ 43, 13, 43, 16 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                },
+                "name" : "self"
+              },
+              "member" : {
+                "kind" : "Identifier",
+                "location" : [ 43, 18, 43, 23 ],
+                "name" : "weight"
+              }
+            } ],
+            "value" : {
+              "kind" : "BinaryExpr",
+              "location" : [ 43, 27, 43, 50 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "left" : {
+                "kind" : "MemberExpr",
+                "location" : [ 43, 27, 43, 37 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "object" : {
+                  "kind" : "Identifier",
+                  "location" : [ 43, 27, 43, 30 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "Animal"
+                  },
+                  "name" : "self"
+                },
+                "member" : {
+                  "kind" : "Identifier",
+                  "location" : [ 43, 32, 43, 37 ],
+                  "name" : "weight"
+                }
+              },
+              "operator" : "+",
+              "right" : {
+                "kind" : "BinaryExpr",
+                "location" : [ 43, 41, 43, 50 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "left" : {
+                  "kind" : "Identifier",
+                  "location" : [ 43, 41, 43, 46 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  },
+                  "name" : "amount"
+                },
+                "operator" : "%",
+                "right" : {
+                  "kind" : "IntegerLiteral",
+                  "location" : [ 43, 50, 43, 50 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  },
+                  "value" : 3
+                }
+              }
+            }
+          } ]
+        } ]
+      }, {
+        "kind" : "ReturnStmt",
+        "location" : [ 44, 9, 44, 26 ],
+        "value" : {
+          "kind" : "MemberExpr",
+          "location" : [ 44, 16, 44, 26 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "object" : {
+            "kind" : "Identifier",
+            "location" : [ 44, 16, 44, 19 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            },
+            "name" : "self"
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 44, 21, 44, 26 ],
+            "name" : "weight"
+          }
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 47, 1, 55, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 47, 7, 47, 9 ],
+      "name" : "Cat"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 47, 11, 47, 16 ],
+      "name" : "Animal"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 48, 5, 48, 18 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 48, 5, 48, 14 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 48, 5, 48, 9 ],
+          "name" : "lives"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 48, 12, 48, 14 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 48, 18, 48, 18 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 9
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 51, 5, 52, 22 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 51, 9, 51, 13 ],
+        "name" : "sound"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 51, 15, 51, 25 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 51, 15, 51, 18 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 51, 21, 51, 25 ],
+          "className" : "Cat"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 51, 31, 51, 33 ],
+        "className" : "str"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 52, 9, 52, 21 ],
+        "value" : {
+          "kind" : "StringLiteral",
+          "location" : [ 52, 16, 52, 21 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "meow"
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 55, 1, 70, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 55, 7, 55, 10 ],
+      "name" : "Lion"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 55, 12, 55, 14 ],
+      "name" : "Cat"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 56, 5, 56, 26 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 56, 5, 56, 19 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 56, 5, 56, 9 ],
+          "name" : "pride"
+        },
+        "type" : {
+          "kind" : "ListType",
+          "location" : [ 56, 12, 56, 19 ],
+          "elementType" : {
+            "kind" : "ClassType",
+            "location" : [ 56, 13, 56, 18 ],
+            "className" : "Animal"
+          }
+        }
+      },
+      "value" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 56, 23, 56, 26 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "<None>"
+        }
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 58, 5, 60, 24 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 58, 9, 58, 16 ],
+        "name" : "__init__"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 58, 18, 58, 29 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 58, 18, 58, 21 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 58, 24, 58, 29 ],
+          "className" : "Lion"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 58, 31, 58, 31 ],
+        "className" : "<None>"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "AssignStmt",
+        "location" : [ 59, 9, 59, 26 ],
+        "targets" : [ {
+          "kind" : "MemberExpr",
+          "location" : [ 59, 9, 59, 17 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "object" : {
+            "kind" : "Identifier",
+            "location" : [ 59, 9, 59, 12 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Lion"
+            },
+            "name" : "self"
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 59, 14, 59, 17 ],
+            "name" : "name"
+          }
+        } ],
+        "value" : {
+          "kind" : "StringLiteral",
+          "location" : [ 59, 21, 59, 26 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "lion"
+        }
+      }, {
+        "kind" : "AssignStmt",
+        "location" : [ 60, 9, 60, 23 ],
+        "targets" : [ {
+          "kind" : "MemberExpr",
+          "location" : [ 60, 9, 60, 18 ],
+          "inferredType" : {
+            "kind" : "ListValueType",
+            "elementType" : {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            }
+          },
+          "object" : {
+            "kind" : "Identifier",
+            "location" : [ 60, 9, 60, 12 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Lion"
+            },
+            "name" : "self"
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 60, 14, 60, 18 ],
+            "name" : "pride"
+          }
+        } ],
+        "value" : {
+          "kind" : "ListExpr",
+          "location" : [ 60, 22, 60, 23 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "<Empty>"
+          },
+          "elements" : [ ]
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 62, 5, 63, 22 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 62, 9, 62, 13 ],
+        "name" : "sound"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 62, 15, 62, 26 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 62, 15, 62, 18 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 62, 21, 62, 26 ],
+          "className" : "Lion"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 62, 32, 62, 34 ],
+        "className" : "str"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 63, 9, 63, 21 ],
+        "value" : {
+          "kind" : "StringLiteral",
+          "location" : [ 63, 16, 63, 21 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "ROAR"
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 65, 5, 67, 31 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 65, 9, 65, 12 ],
+        "name" : "lead"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 65, 14, 65, 25 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 65, 14, 65, 17 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 65, 20, 65, 25 ],
+          "className" : "Lion"
+        }
+      }, {
+        "kind" : "TypedVar",
+        "location" : [ 65, 28, 65, 40 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 65, 28, 65, 32 ],
+          "name" : "other"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 65, 35, 65, 40 ],
+          "className" : "Animal"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 65, 46, 65, 48 ],
+        "className" : "int"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "AssignStmt",
+        "location" : [ 66, 9, 66, 41 ],
+        "targets" : [ {
+          "kind" : "MemberExpr",
+          "location" : [ 66, 9, 66, 18 ],
+          "inferredType" : {
+            "kind" : "ListValueType",
+            "elementType" : {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            }
+          },
+          "object" : {
+            "kind" : "Identifier",
+            "location" : [ 66, 9, 66, 12 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Lion"
+            },
+            "name" : "self"
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 66, 14, 66, 18 ],
+            "name" : "pride"
+          }
+        } ],
+        "value" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 66, 22, 66, 41 ],
+          "inferredType" : {
+            "kind" : "ListValueType",
+            "elementType" : {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            }
+          },
+          "left" : {
+            "kind" : "MemberExpr",
+            "location" : [ 66, 22, 66, 31 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 66, 22, 66, 25 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Lion"
+              },
+              "name" : "self"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 66, 27, 66, 31 ],
+              "name" : "pride"
+            }
+          },
+          "operator" : "+",
+          "right" : {
+            "kind" : "ListExpr",
+            "location" : [ 66, 35, 66, 41 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "elements" : [ {
+              "kind" : "Identifier",
+              "location" : [ 66, 36, 66, 40 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              },
+              "name" : "other"
+            } ]
+          }
+        }
+      }, {
+        "kind" : "ReturnStmt",
+        "location" : [ 67, 9, 67, 30 ],
+        "value" : {
+          "kind" : "CallExpr",
+          "location" : [ 67, 16, 67, 30 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 67, 16, 67, 18 ],
+            "inferredType" : {
+              "kind" : "FuncType",
+              "parameters" : [ {
+                "kind" : "ClassValueType",
+                "className" : "object"
+              } ],
+              "returnType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              }
+            },
+            "name" : "len"
+          },
+          "args" : [ {
+            "kind" : "MemberExpr",
+            "location" : [ 67, 20, 67, 29 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 67, 20, 67, 23 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Lion"
+              },
+              "name" : "self"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 67, 25, 67, 29 ],
+              "name" : "pride"
+            }
+          } ]
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 70, 1, 79, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 70, 7, 70, 12 ],
+      "name" : "Parrot"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 70, 14, 70, 19 ],
+      "name" : "Animal"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 71, 5, 71, 23 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 71, 5, 71, 16 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 71, 5, 71, 9 ],
+          "name" : "words"
+        },
+        "type" : {
+          "kind" : "ListType",
+          "location" : [ 71, 12, 71, 16 ],
+          "elementType" : {
+            "kind" : "ClassType",
+            "location" : [ 71, 13, 71, 15 ],
+            "className" : "str"
+          }
+        }
+      },
+      "value" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 71, 20, 71, 23 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "<None>"
+        }
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 73, 5, 76, 29 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 73, 9, 73, 13 ],
+        "name" : "sound"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 73, 15, 73, 28 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 73, 15, 73, 18 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 73, 21, 73, 28 ],
+          "className" : "Parrot"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 73, 34, 73, 36 ],
+        "className" : "str"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "IfStmt",
+        "location" : [ 74, 9, 76, 8 ],
+        "condition" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 74, 12, 74, 29 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "bool"
+          },
+          "left" : {
+            "kind" : "MemberExpr",
+            "location" : [ 74, 12, 74, 21 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              }
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 74, 12, 74, 15 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Parrot"
+              },
+              "name" : "self"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 74, 17, 74, 21 ],
+              "name" : "words"
+            }
+          },
+          "operator" : "is",
+          "right" : {
+            "kind" : "NoneLiteral",
+            "location" : [ 74, 26, 74, 29 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "<None>"
+            }
+          }
+        },
+        "thenBody" : [ {
+          "kind" : "ReturnStmt",
+          "location" : [ 75, 13, 75, 27 ],
+          "value" : {
+            "kind" : "StringLiteral",
+            "location" : [ 75, 20, 75, 27 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "value" : "squawk"
+          }
+        } ],
+        "elseBody" : [ ]
+      }, {
+        "kind" : "ReturnStmt",
+        "location" : [ 76, 9, 76, 28 ],
+        "value" : {
+          "kind" : "IndexExpr",
+          "location" : [ 76, 16, 76, 28 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "list" : {
+            "kind" : "MemberExpr",
+            "location" : [ 76, 16, 76, 25 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              }
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 76, 16, 76, 19 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Parrot"
+              },
+              "name" : "self"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 76, 21, 76, 25 ],
+              "name" : "words"
+            }
+          },
+          "index" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 76, 27, 76, 27 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "value" : 0
+          }
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 79, 1, 100, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 79, 7, 79, 9 ],
+      "name" : "Pen"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 79, 11, 79, 16 ],
+      "name" : "object"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 80, 5, 80, 28 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 80, 5, 80, 21 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 80, 5, 80, 11 ],
+          "name" : "animals"
+        },
+        "type" : {
+          "kind" : "ListType",
+          "location" : [ 80, 14, 80, 21 ],
+          "elementType" : {
+            "kind" : "ClassType",
+            "location" : [ 80, 15, 80, 20 ],
+            "className" : "Animal"
+          }
+        }
+      },
+      "value" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 80, 25, 80, 28 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "<None>"
+        }
+      }
+    }, {
+      "kind" : "VarDef",
+      "location" : [ 81, 5, 81, 22 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 81, 5, 81, 14 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 81, 5, 81, 9 ],
+          "name" : "label"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 81, 12, 81, 14 ],
+          "className" : "str"
+        }
+      },
+      "value" : {
+        "kind" : "StringLiteral",
+        "location" : [ 81, 18, 81, 22 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "value" : "pen"
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 83, 5, 88, 20 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 83, 9, 83, 11 ],
+        "name" : "add"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 83, 13, 83, 23 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 83, 13, 83, 16 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 83, 19, 83, 23 ],
+          "className" : "Pen"
+        }
+      }, {
+        "kind" : "TypedVar",
+        "location" : [ 83, 26, 83, 34 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 83, 26, 83, 26 ],
+          "name" : "a"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 83, 29, 83, 34 ],
+          "className" : "Animal"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 83, 40, 83, 44 ],
+        "className" : "Pen"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "IfStmt",
+        "location" : [ 84, 9, 88, 8 ],
+        "condition" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 84, 12, 84, 31 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "bool"
+          },
+          "left" : {
+            "kind" : "MemberExpr",
+            "location" : [ 84, 12, 84, 23 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 84, 12, 84, 15 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              },
+              "name" : "self"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 84, 17, 84, 23 ],
+              "name" : "animals"
+            }
+          },
+          "operator" : "is",
+          "right" : {
+            "kind" : "NoneLiteral",
+            "location" : [ 84, 28, 84, 31 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "<None>"
+            }
+          }
+        },
+        "thenBody" : [ {
+          "kind" : "AssignStmt",
+          "location" : [ 85, 13, 85, 30 ],
+          "targets" : [ {
+            "kind" : "MemberExpr",
+            "location" : [ 85, 13, 85, 24 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 85, 13, 85, 16 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              },
+              "name" : "self"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 85, 18, 85, 24 ],
+              "name" : "animals"
+            }
+          } ],
+          "value" : {
+            "kind" : "ListExpr",
+            "location" : [ 85, 28, 85, 30 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "elements" : [ {
+              "kind" : "Identifier",
+              "location" : [ 85, 29, 85, 29 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              },
+              "name" : "a"
+            } ]
+          }
+        } ],
+        "elseBody" : [ {
+          "kind" : "AssignStmt",
+          "location" : [ 87, 13, 87, 45 ],
+          "targets" : [ {
+            "kind" : "MemberExpr",
+            "location" : [ 87, 13, 87, 24 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 87, 13, 87, 16 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              },
+              "name" : "self"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 87, 18, 87, 24 ],
+              "name" : "animals"
+            }
+          } ],
+          "value" : {
+            "kind" : "BinaryExpr",
+            "location" : [ 87, 28, 87, 45 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "left" : {
+              "kind" : "MemberExpr",
+              "location" : [ 87, 28, 87, 39 ],
+              "inferredType" : {
+                "kind" : "ListValueType",
+                "elementType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                }
+              },
+              "object" : {
+                "kind" : "Identifier",
+                "location" : [ 87, 28, 87, 31 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Pen"
+                },
+                "name" : "self"
+              },
+              "member" : {
+                "kind" : "Identifier",
+                "location" : [ 87, 33, 87, 39 ],
+                "name" : "animals"
+              }
+            },
+            "operator" : "+",
+            "right" : {
+              "kind" : "ListExpr",
+              "location" : [ 87, 43, 87, 45 ],
+              "inferredType" : {
+                "kind" : "ListValueType",
+                "elementType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                }
+              },
+              "elements" : [ {
+                "kind" : "Identifier",
+                "location" : [ 87, 44, 87, 44 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                },
+                "name" : "a"
+              } ]
+            }
+          }
+        } ]
+      }, {
+        "kind" : "ReturnStmt",
+        "location" : [ 88, 9, 88, 19 ],
+        "value" : {
+          "kind" : "Identifier",
+          "location" : [ 88, 16, 88, 19 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Pen"
+          },
+          "name" : "self"
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 90, 5, 96, 20 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 90, 9, 90, 16 ],
+        "name" : "heaviest"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 90, 18, 90, 28 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 90, 18, 90, 21 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 90, 24, 90, 28 ],
+          "className" : "Pen"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 90, 34, 90, 39 ],
+        "className" : "Animal"
+      },
+      "declarations" : [ {
+        "kind" : "VarDef",
+        "location" : [ 91, 9, 91, 27 ],
+        "var" : {
+          "kind" : "TypedVar",
+          "location" : [ 91, 9, 91, 20 ],
+          "identifier" : {
+            "kind" : "Identifier",
+            "location" : [ 91, 9, 91, 12 ],
+            "name" : "best"
+          },
+          "type" : {
+            "kind" : "ClassType",
+            "location" : [ 91, 15, 91, 20 ],
+            "className" : "Animal"
+          }
+        },
+        "value" : {
+          "kind" : "NoneLiteral",
+          "location" : [ 91, 24, 91, 27 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        }
+      }, {
+        "kind" : "VarDef",
+        "location" : [ 92, 9, 92, 24 ],
+        "var" : {
+          "kind" : "TypedVar",
+          "location" : [ 92, 9, 92, 17 ],
+          "identifier" : {
+            "kind" : "Identifier",
+            "location" : [ 92, 9, 92, 9 ],
+            "name" : "a"
+          },
+          "type" : {
+            "kind" : "ClassType",
+            "location" : [ 92, 12, 92, 17 ],
+            "className" : "Animal"
+          }
+        },
+        "value" : {
+          "kind" : "NoneLiteral",
+          "location" : [ 92, 21, 92, 24 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        }
+      } ],
+      "statements" : [ {
+        "kind" : "ForStmt",
+        "location" : [ 93, 9, 96, 8 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 93, 13, 93, 13 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Animal"
+          },
+          "name" : "a"
+        },
+        "iterable" : {
+          "kind" : "MemberExpr",
+          "location" : [ 93, 18, 93, 29 ],
+          "inferredType" : {
+            "kind" : "ListValueType",
+            "elementType" : {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            }
+          },
+          "object" : {
+            "kind" : "Identifier",
+            "location" : [ 93, 18, 93, 21 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Pen"
+            },
+            "name" : "self"
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 93, 23, 93, 29 ],
+            "name" : "animals"
+          }
+        },
+        "body" : [ {
+          "kind" : "IfStmt",
+          "location" : [ 94, 13, 96, 8 ],
+          "condition" : {
+            "kind" : "BinaryExpr",
+            "location" : [ 94, 16, 94, 53 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "bool"
+            },
+            "left" : {
+              "kind" : "BinaryExpr",
+              "location" : [ 94, 16, 94, 27 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "bool"
+              },
+              "left" : {
+                "kind" : "Identifier",
+                "location" : [ 94, 16, 94, 19 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                },
+                "name" : "best"
+              },
+              "operator" : "is",
+              "right" : {
+                "kind" : "NoneLiteral",
+                "location" : [ 94, 24, 94, 27 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "<None>"
+                }
+              }
+            },
+            "operator" : "or",
+            "right" : {
+              "kind" : "BinaryExpr",
+              "location" : [ 94, 32, 94, 53 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "bool"
+              },
+              "left" : {
+                "kind" : "MemberExpr",
+                "location" : [ 94, 32, 94, 39 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "object" : {
+                  "kind" : "Identifier",
+                  "location" : [ 94, 32, 94, 32 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "Animal"
+                  },
+                  "name" : "a"
+                },
+                "member" : {
+                  "kind" : "Identifier",
+                  "location" : [ 94, 34, 94, 39 ],
+                  "name" : "weight"
+                }
+              },
+              "operator" : ">",
+              "right" : {
+                "kind" : "MemberExpr",
+                "location" : [ 94, 43, 94, 53 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "object" : {
+                  "kind" : "Identifier",
+                  "location" : [ 94, 43, 94, 46 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "Animal"
+                  },
+                  "name" : "best"
+                },
+                "member" : {
+                  "kind" : "Identifier",
+                  "location" : [ 94, 48, 94, 53 ],
+                  "name" : "weight"
+                }
+              }
+            }
+          },
+          "thenBody" : [ {
+            "kind" : "AssignStmt",
+            "location" : [ 95, 17, 95, 24 ],
+            "targets" : [ {
+              "kind" : "Identifier",
+              "location" : [ 95, 17, 95, 20 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              },
+              "name" : "best"
+            } ],
+            "value" : {
+              "kind" : "Identifier",
+              "location" : [ 95, 24, 95, 24 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              },
+              "name" : "a"
+            }
+          } ],
+          "elseBody" : [ ]
+        } ]
+      }, {
+        "kind" : "ReturnStmt",
+        "location" : [ 96, 9, 96, 19 ],
+        "value" : {
+          "kind" : "Identifier",
+          "location" : [ 96, 16, 96, 19 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Animal"
+          },
+          "name" : "best"
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 100, 1, 104, 13 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 100, 5, 100, 12 ],
+      "name" : "make_cat"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 100, 14, 100, 22 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 100, 14, 100, 17 ],
+        "name" : "name"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 100, 20, 100, 22 ],
+        "className" : "str"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 100, 28, 100, 30 ],
+      "className" : "Cat"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 101, 5, 101, 17 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 101, 5, 101, 10 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 101, 5, 101, 5 ],
+          "name" : "c"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 101, 8, 101, 10 ],
+          "className" : "Cat"
+        }
+      },
+      "value" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 101, 14, 101, 17 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "<None>"
+        }
+      }
+    } ],
+    "statements" : [ {
+      "kind" : "AssignStmt",
+      "location" : [ 102, 5, 102, 13 ],
+      "targets" : [ {
+        "kind" : "Identifier",
+        "location" : [ 102, 5, 102, 5 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Cat"
+        },
+        "name" : "c"
+      } ],
+      "value" : {
+        "kind" : "CallExpr",
+        "location" : [ 102, 9, 102, 13 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Cat"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 102, 9, 102, 11 ],
+          "name" : "Cat"
+        },
+        "args" : [ ]
+      }
+    }, {
+      "kind" : "AssignStmt",
+      "location" : [ 103, 5, 103, 17 ],
+      "targets" : [ {
+        "kind" : "MemberExpr",
+        "location" : [ 103, 5, 103, 10 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "object" : {
+          "kind" : "Identifier",
+          "location" : [ 103, 5, 103, 5 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Cat"
+          },
+          "name" : "c"
+        },
+        "member" : {
+          "kind" : "Identifier",
+          "location" : [ 103, 7, 103, 10 ],
+          "name" : "name"
+        }
+      } ],
+      "value" : {
+        "kind" : "Identifier",
+        "location" : [ 103, 14, 103, 17 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "name" : "name"
+      }
+    }, {
+      "kind" : "ReturnStmt",
+      "location" : [ 104, 5, 104, 12 ],
+      "value" : {
+        "kind" : "Identifier",
+        "location" : [ 104, 12, 104, 12 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Cat"
+        },
+        "name" : "c"
+      }
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 107, 1, 113, 18 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 107, 5, 107, 12 ],
+      "name" : "sum_list"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 107, 14, 107, 25 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 107, 14, 107, 18 ],
+        "name" : "items"
+      },
+      "type" : {
+        "kind" : "ListType",
+        "location" : [ 107, 21, 107, 25 ],
+        "elementType" : {
+          "kind" : "ClassType",
+          "location" : [ 107, 22, 107, 24 ],
+          "className" : "int"
+        }
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 107, 31, 107, 33 ],
+      "className" : "int"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 108, 5, 108, 19 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 108, 5, 108, 15 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 108, 5, 108, 10 ],
+          "name" : "result"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 108, 13, 108, 15 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 108, 19, 108, 19 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 0
+      }
+    }, {
+      "kind" : "VarDef",
+      "location" : [ 109, 5, 109, 14 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 109, 5, 109, 10 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 109, 5, 109, 5 ],
+          "name" : "i"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 109, 8, 109, 10 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 109, 14, 109, 14 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 0
+      }
+    } ],
+    "statements" : [ {
+      "kind" : "WhileStmt",
+      "location" : [ 110, 5, 113, 4 ],
+      "condition" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 110, 11, 110, 24 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "bool"
+        },
+        "left" : {
+          "kind" : "Identifier",
+          "location" : [ 110, 11, 110, 11 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "i"
+        },
+        "operator" : "<",
+        "right" : {
+          "kind" : "CallExpr",
+          "location" : [ 110, 15, 110, 24 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 110, 15, 110, 17 ],
+            "inferredType" : {
+              "kind" : "FuncType",
+              "parameters" : [ {
+                "kind" : "ClassValueType",
+                "className" : "object"
+              } ],
+              "returnType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              }
+            },
+            "name" : "len"
+          },
+          "args" : [ {
+            "kind" : "Identifier",
+            "location" : [ 110, 19, 110, 23 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              }
+            },
+            "name" : "items"
+          } ]
+        }
+      },
+      "body" : [ {
+        "kind" : "AssignStmt",
+        "location" : [ 111, 9, 111, 34 ],
+        "targets" : [ {
+          "kind" : "Identifier",
+          "location" : [ 111, 9, 111, 14 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "result"
+        } ],
+        "value" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 111, 18, 111, 34 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 111, 18, 111, 23 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "result"
+          },
+          "operator" : "+",
+          "right" : {
+            "kind" : "IndexExpr",
+            "location" : [ 111, 27, 111, 34 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "list" : {
+              "kind" : "Identifier",
+              "location" : [ 111, 27, 111, 31 ],
+              "inferredType" : {
+                "kind" : "ListValueType",
+                "elementType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                }
+              },
+              "name" : "items"
+            },
+            "index" : {
+              "kind" : "Identifier",
+              "location" : [ 111, 33, 111, 33 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "name" : "i"
+            }
+          }
+        }
+      }, {
+        "kind" : "AssignStmt",
+        "location" : [ 112, 9, 112, 17 ],
+        "targets" : [ {
+          "kind" : "Identifier",
+          "location" : [ 112, 9, 112, 9 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "i"
+        } ],
+        "value" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 112, 13, 112, 17 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 112, 13, 112, 13 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "i"
+          },
+          "operator" : "+",
+          "right" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 112, 17, 112, 17 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "value" : 1
+          }
+        }
+      } ]
+    }, {
+      "kind" : "ReturnStmt",
+      "location" : [ 113, 5, 113, 17 ],
+      "value" : {
+        "kind" : "Identifier",
+        "location" : [ 113, 12, 113, 17 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "name" : "result"
+      }
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 116, 1, 121, 15 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 116, 5, 116, 11 ],
+      "name" : "reverse"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 116, 13, 116, 18 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 116, 13, 116, 13 ],
+        "name" : "s"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 116, 16, 116, 18 ],
+        "className" : "str"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 116, 24, 116, 26 ],
+      "className" : "str"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 117, 5, 117, 17 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 117, 5, 117, 12 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 117, 5, 117, 7 ],
+          "name" : "out"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 117, 10, 117, 12 ],
+          "className" : "str"
+        }
+      },
+      "value" : {
+        "kind" : "StringLiteral",
+        "location" : [ 117, 16, 117, 17 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "value" : ""
+      }
+    }, {
+      "kind" : "VarDef",
+      "location" : [ 118, 5, 118, 16 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 118, 5, 118, 11 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 118, 5, 118, 6 ],
+          "name" : "ch"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 118, 9, 118, 11 ],
+          "className" : "str"
+        }
+      },
+      "value" : {
+        "kind" : "StringLiteral",
+        "location" : [ 118, 15, 118, 16 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "value" : ""
+      }
+    } ],
+    "statements" : [ {
+      "kind" : "ForStmt",
+      "location" : [ 119, 5, 121, 4 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 119, 9, 119, 10 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "name" : "ch"
+      },
+      "iterable" : {
+        "kind" : "Identifier",
+        "location" : [ 119, 15, 119, 15 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "name" : "s"
+      },
+      "body" : [ {
+        "kind" : "AssignStmt",
+        "location" : [ 120, 9, 120, 22 ],
+        "targets" : [ {
+          "kind" : "Identifier",
+          "location" : [ 120, 9, 120, 11 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "name" : "out"
+        } ],
+        "value" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 120, 15, 120, 22 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 120, 15, 120, 16 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "name" : "ch"
+          },
+          "operator" : "+",
+          "right" : {
+            "kind" : "Identifier",
+            "location" : [ 120, 20, 120, 22 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "name" : "out"
+          }
+        }
+      } ]
+    }, {
+      "kind" : "ReturnStmt",
+      "location" : [ 121, 5, 121, 14 ],
+      "value" : {
+        "kind" : "Identifier",
+        "location" : [ 121, 12, 121, 14 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "name" : "out"
+      }
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 124, 1, 135, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 124, 5, 124, 12 ],
+      "name" : "classify"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 124, 14, 124, 19 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 124, 14, 124, 14 ],
+        "name" : "n"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 124, 17, 124, 19 ],
+        "className" : "int"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 124, 25, 124, 27 ],
+      "className" : "str"
+    },
+    "declarations" : [ ],
+    "statements" : [ {
+      "kind" : "IfStmt",
+      "location" : [ 125, 5, 135, 0 ],
+      "condition" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 125, 8, 125, 12 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "bool"
+        },
+        "left" : {
+          "kind" : "Identifier",
+          "location" : [ 125, 8, 125, 8 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "n"
+        },
+        "operator" : "<",
+        "right" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 125, 12, 125, 12 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 0
+        }
+      },
+      "thenBody" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 126, 9, 126, 25 ],
+        "value" : {
+          "kind" : "StringLiteral",
+          "location" : [ 126, 16, 126, 25 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "negative"
+        }
+      } ],
+      "elseBody" : [ {
+        "kind" : "IfStmt",
+        "location" : [ 127, 5, 135, 0 ],
+        "condition" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 127, 10, 127, 15 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "bool"
+          },
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 127, 10, 127, 10 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "n"
+          },
+          "operator" : "==",
+          "right" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 127, 15, 127, 15 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "value" : 0
+          }
+        },
+        "thenBody" : [ {
+          "kind" : "ReturnStmt",
+          "location" : [ 128, 9, 128, 21 ],
+          "value" : {
+            "kind" : "StringLiteral",
+            "location" : [ 128, 16, 128, 21 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "value" : "zero"
+          }
+        } ],
+        "elseBody" : [ {
+          "kind" : "IfStmt",
+          "location" : [ 129, 5, 135, 0 ],
+          "condition" : {
+            "kind" : "BinaryExpr",
+            "location" : [ 129, 10, 129, 35 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "bool"
+            },
+            "left" : {
+              "kind" : "BinaryExpr",
+              "location" : [ 129, 10, 129, 19 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "bool"
+              },
+              "left" : {
+                "kind" : "BinaryExpr",
+                "location" : [ 129, 10, 129, 14 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "left" : {
+                  "kind" : "Identifier",
+                  "location" : [ 129, 10, 129, 10 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  },
+                  "name" : "n"
+                },
+                "operator" : "%",
+                "right" : {
+                  "kind" : "IntegerLiteral",
+                  "location" : [ 129, 14, 129, 14 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  },
+                  "value" : 2
+                }
+              },
+              "operator" : "==",
+              "right" : {
+                "kind" : "IntegerLiteral",
+                "location" : [ 129, 19, 129, 19 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "value" : 0
+              }
+            },
+            "operator" : "and",
+            "right" : {
+              "kind" : "UnaryExpr",
+              "location" : [ 129, 25, 129, 35 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "bool"
+              },
+              "operator" : "not",
+              "operand" : {
+                "kind" : "BinaryExpr",
+                "location" : [ 129, 29, 129, 35 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "bool"
+                },
+                "left" : {
+                  "kind" : "Identifier",
+                  "location" : [ 129, 29, 129, 29 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  },
+                  "name" : "n"
+                },
+                "operator" : ">",
+                "right" : {
+                  "kind" : "IntegerLiteral",
+                  "location" : [ 129, 33, 129, 35 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  },
+                  "value" : 100
+                }
+              }
+            }
+          },
+          "thenBody" : [ {
+            "kind" : "ReturnStmt",
+            "location" : [ 130, 9, 130, 27 ],
+            "value" : {
+              "kind" : "StringLiteral",
+              "location" : [ 130, 16, 130, 27 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              },
+              "value" : "small even"
+            }
+          } ],
+          "elseBody" : [ {
+            "kind" : "ReturnStmt",
+            "location" : [ 132, 9, 132, 22 ],
+            "value" : {
+              "kind" : "StringLiteral",
+              "location" : [ 132, 16, 132, 22 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              },
+              "value" : "other"
+            }
+          } ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 135, 1, 154, 26 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 135, 5, 135, 11 ],
+      "name" : "counter"
+    },
+    "params" : [ ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 135, 18, 135, 20 ],
+      "className" : "int"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 136, 5, 136, 18 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 136, 5, 136, 14 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 136, 5, 136, 9 ],
+          "name" : "calls"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 136, 12, 136, 14 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 136, 18, 136, 18 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 0
+      }
+    }, {
+      "kind" : "GlobalDecl",
+      "location" : [ 137, 5, 137, 16 ],
+      "variable" : {
+        "kind" : "Identifier",
+        "location" : [ 137, 12, 137, 16 ],
+        "name" : "count"
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 139, 5, 142, 21 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 139, 9, 139, 12 ],
+        "name" : "tick"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 139, 14, 139, 22 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 139, 14, 139, 17 ],
+          "name" : "step"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 139, 20, 139, 22 ],
+          "className" : "int"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 139, 28, 139, 30 ],
+        "className" : "int"
+      },
+      "declarations" : [ {
+        "kind" : "NonLocalDecl",
+        "location" : [ 140, 9, 140, 22 ],
+        "variable" : {
+          "kind" : "Identifier",
+          "location" : [ 140, 18, 140, 22 ],
+          "name" : "calls"
+        }
+      } ],
+      "statements" : [ {
+        "kind" : "AssignStmt",
+        "location" : [ 141, 9, 141, 28 ],
+        "targets" : [ {
+          "kind" : "Identifier",
+          "location" : [ 141, 9, 141, 13 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "calls"
+        } ],
+        "value" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 141, 17, 141, 28 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 141, 17, 141, 21 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "calls"
+          },
+          "operator" : "+",
+          "right" : {
+            "kind" : "Identifier",
+            "location" : [ 141, 25, 141, 28 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "step"
+          }
+        }
+      }, {
+        "kind" : "ReturnStmt",
+        "location" : [ 142, 9, 142, 20 ],
+        "value" : {
+          "kind" : "Identifier",
+          "location" : [ 142, 16, 142, 20 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "calls"
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 144, 5, 149, 32 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 144, 9, 144, 20 ],
+        "name" : "nested_total"
+      },
+      "params" : [ ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 144, 27, 144, 29 ],
+        "className" : "int"
+      },
+      "declarations" : [ {
+        "kind" : "FuncDef",
+        "location" : [ 145, 9, 148, 25 ],
+        "name" : {
+          "kind" : "Identifier",
+          "location" : [ 145, 13, 145, 16 ],
+          "name" : "deep"
+        },
+        "params" : [ ],
+        "returnType" : {
+          "kind" : "ClassType",
+          "location" : [ 145, 23, 145, 25 ],
+          "className" : "int"
+        },
+        "declarations" : [ {
+          "kind" : "NonLocalDecl",
+          "location" : [ 146, 13, 146, 26 ],
+          "variable" : {
+            "kind" : "Identifier",
+            "location" : [ 146, 22, 146, 26 ],
+            "name" : "calls"
+          }
+        } ],
+        "statements" : [ {
+          "kind" : "AssignStmt",
+          "location" : [ 147, 13, 147, 29 ],
+          "targets" : [ {
+            "kind" : "Identifier",
+            "location" : [ 147, 13, 147, 17 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "calls"
+          } ],
+          "value" : {
+            "kind" : "BinaryExpr",
+            "location" : [ 147, 21, 147, 29 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "left" : {
+              "kind" : "Identifier",
+              "location" : [ 147, 21, 147, 25 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "name" : "calls"
+            },
+            "operator" : "*",
+            "right" : {
+              "kind" : "IntegerLiteral",
+              "location" : [ 147, 29, 147, 29 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "value" : 2
+            }
+          }
+        }, {
+          "kind" : "ReturnStmt",
+          "location" : [ 148, 13, 148, 24 ],
+          "value" : {
+            "kind" : "Identifier",
+            "location" : [ 148, 20, 148, 24 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "calls"
+          }
+        } ]
+      } ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 149, 9, 149, 31 ],
+        "value" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 149, 16, 149, 31 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "left" : {
+            "kind" : "CallExpr",
+            "location" : [ 149, 16, 149, 21 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "function" : {
+              "kind" : "Identifier",
+              "location" : [ 149, 16, 149, 19 ],
+              "inferredType" : {
+                "kind" : "FuncType",
+                "parameters" : [ ],
+                "returnType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                }
+              },
+              "name" : "deep"
+            },
+            "args" : [ ]
+          },
+          "operator" : "+",
+          "right" : {
+            "kind" : "CallExpr",
+            "location" : [ 149, 25, 149, 31 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "function" : {
+              "kind" : "Identifier",
+              "location" : [ 149, 25, 149, 28 ],
+              "inferredType" : {
+                "kind" : "FuncType",
+                "parameters" : [ {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                } ],
+                "returnType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                }
+              },
+              "name" : "tick"
+            },
+            "args" : [ {
+              "kind" : "IntegerLiteral",
+              "location" : [ 149, 30, 149, 30 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "value" : 0
+            } ]
+          }
+        }
+      } ]
+    } ],
+    "statements" : [ {
+      "kind" : "AssignStmt",
+      "location" : [ 151, 5, 151, 21 ],
+      "targets" : [ {
+        "kind" : "Identifier",
+        "location" : [ 151, 5, 151, 9 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "name" : "count"
+      } ],
+      "value" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 151, 13, 151, 21 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "left" : {
+          "kind" : "Identifier",
+          "location" : [ 151, 13, 151, 17 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "count"
+        },
+        "operator" : "+",
+        "right" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 151, 21, 151, 21 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 1
+        }
+      }
+    }, {
+      "kind" : "ExprStmt",
+      "location" : [ 152, 5, 152, 11 ],
+      "expr" : {
+        "kind" : "CallExpr",
+        "location" : [ 152, 5, 152, 11 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 152, 5, 152, 8 ],
+          "inferredType" : {
+            "kind" : "FuncType",
+            "parameters" : [ {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            } ],
+            "returnType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            }
+          },
+          "name" : "tick"
+        },
+        "args" : [ {
+          "kind" : "IntegerLiteral",
+          "location" : [ 152, 10, 152, 10 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 1
+        } ]
+      }
+    }, {
+      "kind" : "ExprStmt",
+      "location" : [ 153, 5, 153, 15 ],
+      "expr" : {
+        "kind" : "CallExpr",
+        "location" : [ 153, 5, 153, 15 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 153, 5, 153, 8 ],
+          "inferredType" : {
+            "kind" : "FuncType",
+            "parameters" : [ {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            } ],
+            "returnType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            }
+          },
+          "name" : "tick"
+        },
+        "args" : [ {
+          "kind" : "UnaryExpr",
+          "location" : [ 153, 10, 153, 14 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "operator" : "-",
+          "operand" : {
+            "kind" : "UnaryExpr",
+            "location" : [ 153, 12, 153, 13 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "operator" : "-",
+            "operand" : {
+              "kind" : "IntegerLiteral",
+              "location" : [ 153, 13, 153, 13 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "value" : 2
+            }
+          }
+        } ]
+      }
+    }, {
+      "kind" : "ReturnStmt",
+      "location" : [ 154, 5, 154, 25 ],
+      "value" : {
+        "kind" : "CallExpr",
+        "location" : [ 154, 12, 154, 25 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 154, 12, 154, 23 ],
+          "inferredType" : {
+            "kind" : "FuncType",
+            "parameters" : [ ],
+            "returnType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            }
+          },
+          "name" : "nested_total"
+        },
+        "args" : [ ]
+      }
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 157, 1, 160, 16 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 157, 5, 157, 17 ],
+      "name" : "first_or_none"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 157, 19, 157, 26 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 157, 19, 157, 21 ],
+        "name" : "pen"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 157, 24, 157, 26 ],
+        "className" : "Pen"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 157, 32, 157, 37 ],
+      "className" : "Animal"
+    },
+    "declarations" : [ ],
+    "statements" : [ {
+      "kind" : "IfStmt",
+      "location" : [ 158, 5, 160, 4 ],
+      "condition" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 158, 8, 158, 27 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "bool"
+        },
+        "left" : {
+          "kind" : "CallExpr",
+          "location" : [ 158, 8, 158, 23 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 158, 8, 158, 10 ],
+            "inferredType" : {
+              "kind" : "FuncType",
+              "parameters" : [ {
+                "kind" : "ClassValueType",
+                "className" : "object"
+              } ],
+              "returnType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              }
+            },
+            "name" : "len"
+          },
+          "args" : [ {
+            "kind" : "MemberExpr",
+            "location" : [ 158, 12, 158, 22 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 158, 12, 158, 14 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              },
+              "name" : "pen"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 158, 16, 158, 22 ],
+              "name" : "animals"
+            }
+          } ]
+        },
+        "operator" : ">",
+        "right" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 158, 27, 158, 27 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 0
+        }
+      },
+      "thenBody" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 159, 9, 159, 29 ],
+        "value" : {
+          "kind" : "IndexExpr",
+          "location" : [ 159, 16, 159, 29 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Animal"
+          },
+          "list" : {
+            "kind" : "MemberExpr",
+            "location" : [ 159, 16, 159, 26 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "object" : {
+              "kind" : "Identifier",
+              "location" : [ 159, 16, 159, 18 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              },
+              "name" : "pen"
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 159, 20, 159, 26 ],
+              "name" : "animals"
+            }
+          },
+          "index" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 159, 28, 159, 28 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "value" : 0
+          }
+        }
+      } ],
+      "elseBody" : [ ]
+    }, {
+      "kind" : "ReturnStmt",
+      "location" : [ 160, 5, 160, 15 ],
+      "value" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 160, 12, 160, 15 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "<None>"
+        }
+      }
+    } ]
+  } ],
+  "statements" : [ {
+    "kind" : "AssignStmt",
+    "location" : [ 164, 1, 164, 23 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 164, 1, 164, 12 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "Animal"
+      },
+      "name" : "first_animal"
+    } ],
+    "value" : {
+      "kind" : "CallExpr",
+      "location" : [ 164, 16, 164, 23 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "Animal"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 164, 16, 164, 21 ],
+        "name" : "Animal"
+      },
+      "args" : [ ]
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 165, 1, 165, 29 ],
+    "targets" : [ {
+      "kind" : "MemberExpr",
+      "location" : [ 165, 1, 165, 17 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "str"
+      },
+      "object" : {
+        "kind" : "Identifier",
+        "location" : [ 165, 1, 165, 12 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Animal"
+        },
+        "name" : "first_animal"
+      },
+      "member" : {
+        "kind" : "Identifier",
+        "location" : [ 165, 14, 165, 17 ],
+        "name" : "name"
+      }
+    } ],
+    "value" : {
+      "kind" : "StringLiteral",
+      "location" : [ 165, 21, 165, 29 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "str"
+      },
+      "value" : "generic"
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 166, 1, 166, 21 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 166, 1, 166, 6 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "object"
+      },
+      "name" : "keeper"
+    } ],
+    "value" : {
+      "kind" : "Identifier",
+      "location" : [ 166, 10, 166, 21 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "Animal"
+      },
+      "name" : "first_animal"
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 168, 1, 168, 25 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 168, 1, 168, 7 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        }
+      },
+      "name" : "weights"
+    } ],
+    "value" : {
+      "kind" : "ListExpr",
+      "location" : [ 168, 11, 168, 25 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        }
+      },
+      "elements" : [ {
+        "kind" : "IntegerLiteral",
+        "location" : [ 168, 12, 168, 12 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 3
+      }, {
+        "kind" : "IntegerLiteral",
+        "location" : [ 168, 15, 168, 15 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 1
+      }, {
+        "kind" : "IntegerLiteral",
+        "location" : [ 168, 18, 168, 18 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 4
+      }, {
+        "kind" : "IntegerLiteral",
+        "location" : [ 168, 21, 168, 21 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 1
+      }, {
+        "kind" : "IntegerLiteral",
+        "location" : [ 168, 24, 168, 24 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 5
+      } ]
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 169, 1, 169, 27 ],
+    "targets" : [ {
+      "kind" : "IndexExpr",
+      "location" : [ 169, 1, 169, 10 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "list" : {
+        "kind" : "Identifier",
+        "location" : [ 169, 1, 169, 7 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          }
+        },
+        "name" : "weights"
+      },
+      "index" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 169, 9, 169, 9 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 0
+      }
+    }, {
+      "kind" : "IndexExpr",
+      "location" : [ 169, 14, 169, 23 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "list" : {
+        "kind" : "Identifier",
+        "location" : [ 169, 14, 169, 20 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          }
+        },
+        "name" : "weights"
+      },
+      "index" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 169, 22, 169, 22 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 1
+      }
+    } ],
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 169, 27, 169, 27 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 9
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 170, 1, 170, 24 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 170, 1, 170, 4 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          }
+        }
+      },
+      "name" : "grid"
+    } ],
+    "value" : {
+      "kind" : "ListExpr",
+      "location" : [ 170, 8, 170, 24 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          }
+        }
+      },
+      "elements" : [ {
+        "kind" : "ListExpr",
+        "location" : [ 170, 9, 170, 14 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          }
+        },
+        "elements" : [ {
+          "kind" : "IntegerLiteral",
+          "location" : [ 170, 10, 170, 10 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 1
+        }, {
+          "kind" : "IntegerLiteral",
+          "location" : [ 170, 13, 170, 13 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 2
+        } ]
+      }, {
+        "kind" : "ListExpr",
+        "location" : [ 170, 17, 170, 19 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          }
+        },
+        "elements" : [ {
+          "kind" : "IntegerLiteral",
+          "location" : [ 170, 18, 170, 18 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 3
+        } ]
+      }, {
+        "kind" : "ListExpr",
+        "location" : [ 170, 22, 170, 23 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "<Empty>"
+        },
+        "elements" : [ ]
+      } ]
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 171, 1, 171, 29 ],
+    "targets" : [ {
+      "kind" : "IndexExpr",
+      "location" : [ 171, 1, 171, 7 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        }
+      },
+      "list" : {
+        "kind" : "Identifier",
+        "location" : [ 171, 1, 171, 4 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ListValueType",
+            "elementType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            }
+          }
+        },
+        "name" : "grid"
+      },
+      "index" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 171, 6, 171, 6 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 2
+      }
+    } ],
+    "value" : {
+      "kind" : "ListExpr",
+      "location" : [ 171, 11, 171, 29 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        }
+      },
+      "elements" : [ {
+        "kind" : "CallExpr",
+        "location" : [ 171, 12, 171, 28 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 171, 12, 171, 19 ],
+          "inferredType" : {
+            "kind" : "FuncType",
+            "parameters" : [ {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              }
+            } ],
+            "returnType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            }
+          },
+          "name" : "sum_list"
+        },
+        "args" : [ {
+          "kind" : "Identifier",
+          "location" : [ 171, 21, 171, 27 ],
+          "inferredType" : {
+            "kind" : "ListValueType",
+            "elementType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            }
+          },
+          "name" : "weights"
+        } ]
+      } ]
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 172, 1, 172, 34 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 172, 1, 172, 5 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        }
+      },
+      "name" : "names"
+    } ],
+    "value" : {
+      "kind" : "BinaryExpr",
+      "location" : [ 172, 9, 172, 34 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        }
+      },
+      "left" : {
+        "kind" : "ListExpr",
+        "location" : [ 172, 9, 172, 22 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          }
+        },
+        "elements" : [ {
+          "kind" : "StringLiteral",
+          "location" : [ 172, 10, 172, 14 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "Tom"
+        }, {
+          "kind" : "StringLiteral",
+          "location" : [ 172, 17, 172, 21 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "Leo"
+        } ]
+      },
+      "operator" : "+",
+      "right" : {
+        "kind" : "ListExpr",
+        "location" : [ 172, 26, 172, 34 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          }
+        },
+        "elements" : [ {
+          "kind" : "StringLiteral",
+          "location" : [ 172, 27, 172, 33 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "Polly"
+        } ]
+      }
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 174, 1, 174, 21 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 174, 1, 174, 4 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "Pen"
+        }
+      },
+      "name" : "pens"
+    } ],
+    "value" : {
+      "kind" : "ListExpr",
+      "location" : [ 174, 8, 174, 21 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "Pen"
+        }
+      },
+      "elements" : [ {
+        "kind" : "CallExpr",
+        "location" : [ 174, 9, 174, 13 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Pen"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 174, 9, 174, 11 ],
+          "name" : "Pen"
+        },
+        "args" : [ ]
+      }, {
+        "kind" : "CallExpr",
+        "location" : [ 174, 16, 174, 20 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Pen"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 174, 16, 174, 18 ],
+          "name" : "Pen"
+        },
+        "args" : [ ]
+      } ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 175, 1, 175, 43 ],
+    "expr" : {
+      "kind" : "MethodCallExpr",
+      "location" : [ 175, 1, 175, 43 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "Pen"
+      },
+      "method" : {
+        "kind" : "MemberExpr",
+        "location" : [ 175, 1, 175, 35 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "Pen"
+          }, {
+            "kind" : "ClassValueType",
+            "className" : "Animal"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "Pen"
+          }
+        },
+        "object" : {
+          "kind" : "MethodCallExpr",
+          "location" : [ 175, 1, 175, 31 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Pen"
+          },
+          "method" : {
+            "kind" : "MemberExpr",
+            "location" : [ 175, 1, 175, 11 ],
+            "inferredType" : {
+              "kind" : "FuncType",
+              "parameters" : [ {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              }, {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              } ],
+              "returnType" : {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              }
+            },
+            "object" : {
+              "kind" : "IndexExpr",
+              "location" : [ 175, 1, 175, 7 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              },
+              "list" : {
+                "kind" : "Identifier",
+                "location" : [ 175, 1, 175, 4 ],
+                "inferredType" : {
+                  "kind" : "ListValueType",
+                  "elementType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "Pen"
+                  }
+                },
+                "name" : "pens"
+              },
+              "index" : {
+                "kind" : "IntegerLiteral",
+                "location" : [ 175, 6, 175, 6 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "value" : 0
+              }
+            },
+            "member" : {
+              "kind" : "Identifier",
+              "location" : [ 175, 9, 175, 11 ],
+              "name" : "add"
+            }
+          },
+          "args" : [ {
+            "kind" : "CallExpr",
+            "location" : [ 175, 13, 175, 30 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Cat"
+            },
+            "function" : {
+              "kind" : "Identifier",
+              "location" : [ 175, 13, 175, 20 ],
+              "inferredType" : {
+                "kind" : "FuncType",
+                "parameters" : [ {
+                  "kind" : "ClassValueType",
+                  "className" : "str"
+                } ],
+                "returnType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Cat"
+                }
+              },
+              "name" : "make_cat"
+            },
+            "args" : [ {
+              "kind" : "IndexExpr",
+              "location" : [ 175, 22, 175, 29 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              },
+              "list" : {
+                "kind" : "Identifier",
+                "location" : [ 175, 22, 175, 26 ],
+                "inferredType" : {
+                  "kind" : "ListValueType",
+                  "elementType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "str"
+                  }
+                },
+                "name" : "names"
+              },
+              "index" : {
+                "kind" : "IntegerLiteral",
+                "location" : [ 175, 28, 175, 28 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "int"
+                },
+                "value" : 0
+              }
+            } ]
+          } ]
+        },
+        "member" : {
+          "kind" : "Identifier",
+          "location" : [ 175, 33, 175, 35 ],
+          "name" : "add"
+        }
+      },
+      "args" : [ {
+        "kind" : "CallExpr",
+        "location" : [ 175, 37, 175, 42 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Lion"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 175, 37, 175, 40 ],
+          "name" : "Lion"
+        },
+        "args" : [ ]
+      } ]
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 176, 1, 176, 23 ],
+    "targets" : [ {
+      "kind" : "MemberExpr",
+      "location" : [ 176, 1, 176, 13 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "str"
+      },
+      "object" : {
+        "kind" : "IndexExpr",
+        "location" : [ 176, 1, 176, 7 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Pen"
+        },
+        "list" : {
+          "kind" : "Identifier",
+          "location" : [ 176, 1, 176, 4 ],
+          "inferredType" : {
+            "kind" : "ListValueType",
+            "elementType" : {
+              "kind" : "ClassValueType",
+              "className" : "Pen"
+            }
+          },
+          "name" : "pens"
+        },
+        "index" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 176, 6, 176, 6 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 1
+        }
+      },
+      "member" : {
+        "kind" : "Identifier",
+        "location" : [ 176, 9, 176, 13 ],
+        "name" : "label"
+      }
+    } ],
+    "value" : {
+      "kind" : "StringLiteral",
+      "location" : [ 176, 17, 176, 23 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "str"
+      },
+      "value" : "birds"
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 177, 1, 177, 21 ],
+    "expr" : {
+      "kind" : "MethodCallExpr",
+      "location" : [ 177, 1, 177, 21 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "Pen"
+      },
+      "method" : {
+        "kind" : "MemberExpr",
+        "location" : [ 177, 1, 177, 11 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "Pen"
+          }, {
+            "kind" : "ClassValueType",
+            "className" : "Animal"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "Pen"
+          }
+        },
+        "object" : {
+          "kind" : "IndexExpr",
+          "location" : [ 177, 1, 177, 7 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Pen"
+          },
+          "list" : {
+            "kind" : "Identifier",
+            "location" : [ 177, 1, 177, 4 ],
+            "inferredType" : {
+              "kind" : "ListValueType",
+              "elementType" : {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              }
+            },
+            "name" : "pens"
+          },
+          "index" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 177, 6, 177, 6 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "value" : 1
+          }
+        },
+        "member" : {
+          "kind" : "Identifier",
+          "location" : [ 177, 9, 177, 11 ],
+          "name" : "add"
+        }
+      },
+      "args" : [ {
+        "kind" : "CallExpr",
+        "location" : [ 177, 13, 177, 20 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Parrot"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 177, 13, 177, 18 ],
+          "name" : "Parrot"
+        },
+        "args" : [ ]
+      } ]
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 179, 1, 179, 66 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 179, 1, 179, 12 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "name" : "total_weight"
+    } ],
+    "value" : {
+      "kind" : "BinaryExpr",
+      "location" : [ 179, 16, 179, 66 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "left" : {
+        "kind" : "MethodCallExpr",
+        "location" : [ 179, 16, 179, 42 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "method" : {
+          "kind" : "MemberExpr",
+          "location" : [ 179, 16, 179, 38 ],
+          "inferredType" : {
+            "kind" : "FuncType",
+            "parameters" : [ {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            }, {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            } ],
+            "returnType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            }
+          },
+          "object" : {
+            "kind" : "MethodCallExpr",
+            "location" : [ 179, 16, 179, 33 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            },
+            "method" : {
+              "kind" : "MemberExpr",
+              "location" : [ 179, 16, 179, 31 ],
+              "inferredType" : {
+                "kind" : "FuncType",
+                "parameters" : [ {
+                  "kind" : "ClassValueType",
+                  "className" : "Pen"
+                } ],
+                "returnType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Animal"
+                }
+              },
+              "object" : {
+                "kind" : "IndexExpr",
+                "location" : [ 179, 16, 179, 22 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Pen"
+                },
+                "list" : {
+                  "kind" : "Identifier",
+                  "location" : [ 179, 16, 179, 19 ],
+                  "inferredType" : {
+                    "kind" : "ListValueType",
+                    "elementType" : {
+                      "kind" : "ClassValueType",
+                      "className" : "Pen"
+                    }
+                  },
+                  "name" : "pens"
+                },
+                "index" : {
+                  "kind" : "IntegerLiteral",
+                  "location" : [ 179, 21, 179, 21 ],
+                  "inferredType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  },
+                  "value" : 0
+                }
+              },
+              "member" : {
+                "kind" : "Identifier",
+                "location" : [ 179, 24, 179, 31 ],
+                "name" : "heaviest"
+              }
+            },
+            "args" : [ ]
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 179, 35, 179, 38 ],
+            "name" : "feed"
+          }
+        },
+        "args" : [ {
+          "kind" : "IntegerLiteral",
+          "location" : [ 179, 40, 179, 41 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 10
+        } ]
+      },
+      "operator" : "+",
+      "right" : {
+        "kind" : "MethodCallExpr",
+        "location" : [ 179, 46, 179, 66 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "method" : {
+          "kind" : "MemberExpr",
+          "location" : [ 179, 46, 179, 62 ],
+          "inferredType" : {
+            "kind" : "FuncType",
+            "parameters" : [ {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            }, {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            } ],
+            "returnType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            }
+          },
+          "object" : {
+            "kind" : "Identifier",
+            "location" : [ 179, 46, 179, 57 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            },
+            "name" : "first_animal"
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 179, 59, 179, 62 ],
+            "name" : "feed"
+          }
+        },
+        "args" : [ {
+          "kind" : "UnaryExpr",
+          "location" : [ 179, 64, 179, 65 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "operator" : "-",
+          "operand" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 179, 65, 179, 65 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "value" : 1
+          }
+        } ]
+      }
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 180, 1, 180, 68 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 180, 1, 180, 7 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "bool"
+      },
+      "name" : "verbose"
+    } ],
+    "value" : {
+      "kind" : "BinaryExpr",
+      "location" : [ 180, 11, 180, 68 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "bool"
+      },
+      "left" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 180, 11, 180, 27 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "bool"
+        },
+        "left" : {
+          "kind" : "Identifier",
+          "location" : [ 180, 11, 180, 22 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "total_weight"
+        },
+        "operator" : ">=",
+        "right" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 180, 27, 180, 27 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 5
+        }
+      },
+      "operator" : "or",
+      "right" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 180, 32, 180, 68 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "bool"
+        },
+        "left" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 180, 32, 180, 48 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "bool"
+          },
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 180, 32, 180, 39 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "name" : "zoo_name"
+          },
+          "operator" : "==",
+          "right" : {
+            "kind" : "StringLiteral",
+            "location" : [ 180, 44, 180, 48 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "value" : "Zoo"
+          }
+        },
+        "operator" : "and",
+        "right" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 180, 54, 180, 68 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "bool"
+          },
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 180, 54, 180, 60 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "bool"
+            },
+            "name" : "verbose"
+          },
+          "operator" : "!=",
+          "right" : {
+            "kind" : "BooleanLiteral",
+            "location" : [ 180, 65, 180, 68 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "bool"
+            },
+            "value" : true
+          }
+        }
+      }
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 184, 1, 184, 71 ],
+    "targets" : [ {
+      "kind" : "MemberExpr",
+      "location" : [ 184, 1, 184, 19 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "Animal"
+      },
+      "object" : {
+        "kind" : "Identifier",
+        "location" : [ 184, 1, 184, 12 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Animal"
+        },
+        "name" : "first_animal"
+      },
+      "member" : {
+        "kind" : "Identifier",
+        "location" : [ 184, 14, 184, 19 ],
+        "name" : "friend"
+      }
+    } ],
+    "value" : {
+      "kind" : "IfExpr",
+      "location" : [ 184, 23, 184, 71 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "Cat"
+      },
+      "condition" : {
+        "kind" : "Identifier",
+        "location" : [ 184, 55, 184, 61 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "bool"
+        },
+        "name" : "verbose"
+      },
+      "thenExpr" : {
+        "kind" : "IndexExpr",
+        "location" : [ 184, 23, 184, 50 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "Cat"
+        },
+        "list" : {
+          "kind" : "ListExpr",
+          "location" : [ 184, 23, 184, 47 ],
+          "inferredType" : {
+            "kind" : "ListValueType",
+            "elementType" : {
+              "kind" : "ClassValueType",
+              "className" : "Cat"
+            }
+          },
+          "elements" : [ {
+            "kind" : "CallExpr",
+            "location" : [ 184, 24, 184, 38 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Cat"
+            },
+            "function" : {
+              "kind" : "Identifier",
+              "location" : [ 184, 24, 184, 31 ],
+              "inferredType" : {
+                "kind" : "FuncType",
+                "parameters" : [ {
+                  "kind" : "ClassValueType",
+                  "className" : "str"
+                } ],
+                "returnType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Cat"
+                }
+              },
+              "name" : "make_cat"
+            },
+            "args" : [ {
+              "kind" : "StringLiteral",
+              "location" : [ 184, 33, 184, 37 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              },
+              "value" : "Kit"
+            } ]
+          }, {
+            "kind" : "CallExpr",
+            "location" : [ 184, 41, 184, 46 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Lion"
+            },
+            "function" : {
+              "kind" : "Identifier",
+              "location" : [ 184, 41, 184, 44 ],
+              "name" : "Lion"
+            },
+            "args" : [ ]
+          } ]
+        },
+        "index" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 184, 49, 184, 49 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 1
+        }
+      },
+      "elseExpr" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 184, 68, 184, 71 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "<None>"
+        }
+      }
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 185, 1, 185, 58 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 185, 1, 185, 6 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "object"
+      },
+      "name" : "keeper"
+    } ],
+    "value" : {
+      "kind" : "IfExpr",
+      "location" : [ 185, 10, 185, 58 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "object"
+      },
+      "condition" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 185, 31, 185, 44 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "bool"
+        },
+        "left" : {
+          "kind" : "Identifier",
+          "location" : [ 185, 31, 185, 36 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          },
+          "name" : "keeper"
+        },
+        "operator" : "is",
+        "right" : {
+          "kind" : "NoneLiteral",
+          "location" : [ 185, 41, 185, 44 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        }
+      },
+      "thenExpr" : {
+        "kind" : "ListExpr",
+        "location" : [ 185, 10, 185, 26 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          }
+        },
+        "elements" : [ {
+          "kind" : "NoneLiteral",
+          "location" : [ 185, 11, 185, 14 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        }, {
+          "kind" : "CallExpr",
+          "location" : [ 185, 17, 185, 22 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Lion"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 185, 17, 185, 20 ],
+            "name" : "Lion"
+          },
+          "args" : [ ]
+        }, {
+          "kind" : "IntegerLiteral",
+          "location" : [ 185, 25, 185, 25 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 3
+        } ]
+      },
+      "elseExpr" : {
+        "kind" : "StringLiteral",
+        "location" : [ 185, 51, 185, 58 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "value" : "nobody"
+      }
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 186, 1, 186, 45 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 186, 1, 186, 45 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 186, 1, 186, 5 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        },
+        "name" : "print"
+      },
+      "args" : [ {
+        "kind" : "ListExpr",
+        "location" : [ 186, 7, 186, 44 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "Animal"
+          }
+        },
+        "elements" : [ {
+          "kind" : "Identifier",
+          "location" : [ 186, 8, 186, 19 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Animal"
+          },
+          "name" : "first_animal"
+        }, {
+          "kind" : "CallExpr",
+          "location" : [ 186, 22, 186, 43 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Animal"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 186, 22, 186, 34 ],
+            "inferredType" : {
+              "kind" : "FuncType",
+              "parameters" : [ {
+                "kind" : "ClassValueType",
+                "className" : "Pen"
+              } ],
+              "returnType" : {
+                "kind" : "ClassValueType",
+                "className" : "Animal"
+              }
+            },
+            "name" : "first_or_none"
+          },
+          "args" : [ {
+            "kind" : "IndexExpr",
+            "location" : [ 186, 36, 186, 42 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Pen"
+            },
+            "list" : {
+              "kind" : "Identifier",
+              "location" : [ 186, 36, 186, 39 ],
+              "inferredType" : {
+                "kind" : "ListValueType",
+                "elementType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "Pen"
+                }
+              },
+              "name" : "pens"
+            },
+            "index" : {
+              "kind" : "IntegerLiteral",
+              "location" : [ 186, 41, 186, 41 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "value" : 1
+            }
+          } ]
+        } ]
+      } ]
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 188, 1, 188, 17 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 188, 1, 188, 5 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "name" : "count"
+    } ],
+    "value" : {
+      "kind" : "CallExpr",
+      "location" : [ 188, 9, 188, 17 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 188, 9, 188, 15 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          }
+        },
+        "name" : "counter"
+      },
+      "args" : [ ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 189, 1, 189, 22 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 189, 1, 189, 22 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 189, 1, 189, 5 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        },
+        "name" : "print"
+      },
+      "args" : [ {
+        "kind" : "CallExpr",
+        "location" : [ 189, 7, 189, 21 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 189, 7, 189, 14 ],
+          "inferredType" : {
+            "kind" : "FuncType",
+            "parameters" : [ {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            } ],
+            "returnType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            }
+          },
+          "name" : "classify"
+        },
+        "args" : [ {
+          "kind" : "Identifier",
+          "location" : [ 189, 16, 189, 20 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "count"
+        } ]
+      } ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 190, 1, 190, 57 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 190, 1, 190, 57 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 190, 1, 190, 5 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        },
+        "name" : "print"
+      },
+      "args" : [ {
+        "kind" : "BinaryExpr",
+        "location" : [ 190, 7, 190, 56 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "left" : {
+          "kind" : "IndexExpr",
+          "location" : [ 190, 7, 190, 26 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "list" : {
+            "kind" : "CallExpr",
+            "location" : [ 190, 7, 190, 23 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "function" : {
+              "kind" : "Identifier",
+              "location" : [ 190, 7, 190, 13 ],
+              "inferredType" : {
+                "kind" : "FuncType",
+                "parameters" : [ {
+                  "kind" : "ClassValueType",
+                  "className" : "str"
+                } ],
+                "returnType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "str"
+                }
+              },
+              "name" : "reverse"
+            },
+            "args" : [ {
+              "kind" : "Identifier",
+              "location" : [ 190, 15, 190, 22 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              },
+              "name" : "zoo_name"
+            } ]
+          },
+          "index" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 190, 25, 190, 25 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "value" : 0
+          }
+        },
+        "operator" : "+",
+        "right" : {
+          "kind" : "IndexExpr",
+          "location" : [ 190, 30, 190, 56 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "list" : {
+            "kind" : "Identifier",
+            "location" : [ 190, 30, 190, 37 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "str"
+            },
+            "name" : "zoo_name"
+          },
+          "index" : {
+            "kind" : "BinaryExpr",
+            "location" : [ 190, 39, 190, 55 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "left" : {
+              "kind" : "CallExpr",
+              "location" : [ 190, 39, 190, 51 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "function" : {
+                "kind" : "Identifier",
+                "location" : [ 190, 39, 190, 41 ],
+                "inferredType" : {
+                  "kind" : "FuncType",
+                  "parameters" : [ {
+                    "kind" : "ClassValueType",
+                    "className" : "object"
+                  } ],
+                  "returnType" : {
+                    "kind" : "ClassValueType",
+                    "className" : "int"
+                  }
+                },
+                "name" : "len"
+              },
+              "args" : [ {
+                "kind" : "Identifier",
+                "location" : [ 190, 43, 190, 50 ],
+                "inferredType" : {
+                  "kind" : "ClassValueType",
+                  "className" : "str"
+                },
+                "name" : "zoo_name"
+              } ]
+            },
+            "operator" : "-",
+            "right" : {
+              "kind" : "IntegerLiteral",
+              "location" : [ 190, 55, 190, 55 ],
+              "inferredType" : {
+                "kind" : "ClassValueType",
+                "className" : "int"
+              },
+              "value" : 1
+            }
+          }
+        }
+      } ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 191, 1, 191, 28 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 191, 1, 191, 28 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 191, 1, 191, 5 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        },
+        "name" : "print"
+      },
+      "args" : [ {
+        "kind" : "MethodCallExpr",
+        "location" : [ 191, 7, 191, 27 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "method" : {
+          "kind" : "MemberExpr",
+          "location" : [ 191, 7, 191, 17 ],
+          "inferredType" : {
+            "kind" : "FuncType",
+            "parameters" : [ {
+              "kind" : "ClassValueType",
+              "className" : "Lion"
+            }, {
+              "kind" : "ClassValueType",
+              "className" : "Animal"
+            } ],
+            "returnType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            }
+          },
+          "object" : {
+            "kind" : "CallExpr",
+            "location" : [ 191, 7, 191, 12 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "Lion"
+            },
+            "function" : {
+              "kind" : "Identifier",
+              "location" : [ 191, 7, 191, 10 ],
+              "name" : "Lion"
+            },
+            "args" : [ ]
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 191, 14, 191, 17 ],
+            "name" : "lead"
+          }
+        },
+        "args" : [ {
+          "kind" : "CallExpr",
+          "location" : [ 191, 19, 191, 26 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "Parrot"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 191, 19, 191, 24 ],
+            "name" : "Parrot"
+          },
+          "args" : [ ]
+        } ]
+      } ]
+    }
+  }, {
+    "kind" : "ForStmt",
+    "location" : [ 193, 1, 199, 0 ],
+    "identifier" : {
+      "kind" : "Identifier",
+      "location" : [ 193, 5, 193, 9 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "name" : "count"
+    },
+    "iterable" : {
+      "kind" : "Identifier",
+      "location" : [ 193, 14, 193, 20 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        }
+      },
+      "name" : "weights"
+    },
+    "body" : [ {
+      "kind" : "IfStmt",
+      "location" : [ 194, 5, 199, 0 ],
+      "condition" : {
+        "kind" : "UnaryExpr",
+        "location" : [ 194, 8, 194, 21 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "bool"
+        },
+        "operator" : "not",
+        "operand" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 194, 12, 194, 21 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "bool"
+          },
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 194, 12, 194, 16 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "count"
+          },
+          "operator" : "!=",
+          "right" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 194, 21, 194, 21 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "value" : 1
+          }
+        }
+      },
+      "thenBody" : [ ],
+      "elseBody" : [ {
+        "kind" : "ExprStmt",
+        "location" : [ 197, 9, 197, 20 ],
+        "expr" : {
+          "kind" : "CallExpr",
+          "location" : [ 197, 9, 197, 20 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 197, 9, 197, 13 ],
+            "inferredType" : {
+              "kind" : "FuncType",
+              "parameters" : [ {
+                "kind" : "ClassValueType",
+                "className" : "object"
+              } ],
+              "returnType" : {
+                "kind" : "ClassValueType",
+                "className" : "<None>"
+              }
+            },
+            "name" : "print"
+          },
+          "args" : [ {
+            "kind" : "Identifier",
+            "location" : [ 197, 15, 197, 19 ],
+            "inferredType" : {
+              "kind" : "ClassValueType",
+              "className" : "int"
+            },
+            "name" : "count"
+          } ]
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "WhileStmt",
+    "location" : [ 199, 1, 202, 0 ],
+    "condition" : {
+      "kind" : "BinaryExpr",
+      "location" : [ 199, 7, 199, 15 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "bool"
+      },
+      "left" : {
+        "kind" : "Identifier",
+        "location" : [ 199, 7, 199, 11 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "name" : "count"
+      },
+      "operator" : ">",
+      "right" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 199, 15, 199, 15 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 0
+      }
+    },
+    "body" : [ {
+      "kind" : "AssignStmt",
+      "location" : [ 200, 5, 200, 21 ],
+      "targets" : [ {
+        "kind" : "Identifier",
+        "location" : [ 200, 5, 200, 9 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "name" : "count"
+      } ],
+      "value" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 200, 13, 200, 21 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "left" : {
+          "kind" : "Identifier",
+          "location" : [ 200, 13, 200, 17 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "count"
+        },
+        "operator" : "-",
+        "right" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 200, 21, 200, 21 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 3
+        }
+      }
+    } ]
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 202, 1, 202, 20 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 202, 1, 202, 20 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 202, 1, 202, 5 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        },
+        "name" : "print"
+      },
+      "args" : [ {
+        "kind" : "BinaryExpr",
+        "location" : [ 202, 7, 202, 19 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "left" : {
+          "kind" : "CallExpr",
+          "location" : [ 202, 7, 202, 13 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 202, 7, 202, 11 ],
+            "inferredType" : {
+              "kind" : "FuncType",
+              "parameters" : [ ],
+              "returnType" : {
+                "kind" : "ClassValueType",
+                "className" : "str"
+              }
+            },
+            "name" : "input"
+          },
+          "args" : [ ]
+        },
+        "operator" : "+",
+        "right" : {
+          "kind" : "StringLiteral",
+          "location" : [ 202, 17, 202, 19 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "str"
+          },
+          "value" : "!"
+        }
+      } ]
+    }
+  } ],
+  "errors" : {
+    "errors" : [ ],
+    "kind" : "Errors",
+    "location" : [ 0, 0, 0, 0 ]
+  }
+}

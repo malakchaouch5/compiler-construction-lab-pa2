@@ -1,0 +1,186 @@
+{
+  "kind" : "Program",
+  "location" : [ 2, 1, 17, 1 ],
+  "declarations" : [ {
+    "kind" : "VarDef",
+    "location" : [ 2, 1, 2, 9 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 2, 1, 2, 5 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 2, 1, 2, 1 ],
+        "name" : "x"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 2, 3, 2, 5 ],
+        "className" : "int"
+      }
+    },
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 2, 9, 2, 9 ],
+      "value" : 0
+    }
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 3, 1, 12, 9 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 3, 5, 3, 5 ],
+      "name" : "f"
+    },
+    "params" : [ ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 3, 8, 3, 8 ],
+      "className" : "<None>"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 4, 5, 4, 13 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 4, 5, 4, 9 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 4, 5, 4, 5 ],
+          "name" : "y"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 4, 7, 4, 9 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 4, 13, 4, 13 ],
+        "value" : 0
+      }
+    }, {
+      "kind" : "GlobalDecl",
+      "location" : [ 5, 5, 5, 12 ],
+      "variable" : {
+        "kind" : "Identifier",
+        "location" : [ 5, 12, 5, 12 ],
+        "name" : "x"
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 6, 5, 11, 13 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 6, 9, 6, 9 ],
+        "name" : "g"
+      },
+      "params" : [ ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 6, 12, 6, 12 ],
+        "className" : "<None>"
+      },
+      "declarations" : [ {
+        "kind" : "FuncDef",
+        "location" : [ 7, 9, 10, 18 ],
+        "name" : {
+          "kind" : "Identifier",
+          "location" : [ 7, 13, 7, 13 ],
+          "name" : "h"
+        },
+        "params" : [ ],
+        "returnType" : {
+          "kind" : "ClassType",
+          "location" : [ 7, 16, 7, 16 ],
+          "className" : "<None>"
+        },
+        "declarations" : [ {
+          "kind" : "NonLocalDecl",
+          "location" : [ 8, 13, 8, 22 ],
+          "variable" : {
+            "kind" : "Identifier",
+            "location" : [ 8, 22, 8, 22 ],
+            "name" : "y"
+          }
+        }, {
+          "kind" : "NonLocalDecl",
+          "location" : [ 9, 13, 9, 22 ],
+          "variable" : {
+            "kind" : "Identifier",
+            "location" : [ 9, 22, 9, 22 ],
+            "name" : "x"
+          }
+        } ],
+        "statements" : [ {
+          "kind" : "AssignStmt",
+          "location" : [ 10, 13, 10, 17 ],
+          "targets" : [ {
+            "kind" : "Identifier",
+            "location" : [ 10, 13, 10, 13 ],
+            "name" : "y"
+          } ],
+          "value" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 10, 17, 10, 17 ],
+            "value" : 1
+          }
+        } ]
+      } ],
+      "statements" : [ ]
+    } ],
+    "statements" : [ ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 13, 1, 16, 9 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 13, 5, 13, 5 ],
+      "name" : "k"
+    },
+    "params" : [ ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 13, 8, 13, 8 ],
+      "className" : "<None>"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 14, 5, 14, 13 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 14, 5, 14, 9 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 14, 5, 14, 5 ],
+          "name" : "a"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 14, 7, 14, 9 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 14, 13, 14, 13 ],
+        "value" : 1
+      }
+    }, {
+      "kind" : "NonLocalDecl",
+      "location" : [ 15, 5, 15, 14 ],
+      "variable" : {
+        "kind" : "Identifier",
+        "location" : [ 15, 14, 15, 14 ],
+        "name" : "a"
+      }
+    } ],
+    "statements" : [ ]
+  } ],
+  "statements" : [ ],
+  "errors" : {
+    "errors" : [ ],
+    "kind" : "Errors",
+    "location" : [ 0, 0, 0, 0 ]
+  }
+}

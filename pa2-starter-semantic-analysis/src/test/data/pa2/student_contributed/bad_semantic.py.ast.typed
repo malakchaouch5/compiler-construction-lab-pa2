@@ -1,0 +1,1282 @@
+{
+  "kind" : "Program",
+  "location" : [ 8, 1, 109, 5 ],
+  "declarations" : [ {
+    "kind" : "VarDef",
+    "location" : [ 8, 1, 8, 14 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 8, 1, 8, 10 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 8, 1, 8, 5 ],
+        "name" : "count"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 8, 8, 8, 10 ],
+        "className" : "int"
+      }
+    },
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 8, 14, 8, 14 ],
+      "value" : 0
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 9, 1, 9, 14 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 9, 1, 9, 10 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 9, 1, 9, 5 ],
+        "errorMsg" : "Duplicate declaration of identifier in same scope: count",
+        "name" : "count"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 9, 8, 9, 10 ],
+        "className" : "int"
+      }
+    },
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 9, 14, 9, 14 ],
+      "value" : 1
+    }
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 11, 1, 14, 13 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 11, 5, 11, 10 ],
+      "name" : "helper"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 11, 12, 11, 17 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 11, 12, 11, 12 ],
+        "name" : "a"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 11, 15, 11, 17 ],
+        "className" : "int"
+      }
+    }, {
+      "kind" : "TypedVar",
+      "location" : [ 11, 20, 11, 26 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 11, 20, 11, 20 ],
+        "errorMsg" : "Duplicate declaration of identifier in same scope: a",
+        "name" : "a"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 11, 23, 11, 26 ],
+        "className" : "bool"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 11, 32, 11, 34 ],
+      "className" : "int"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 12, 5, 12, 14 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 12, 5, 12, 10 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 12, 5, 12, 5 ],
+          "name" : "b"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 12, 8, 12, 10 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 12, 14, 12, 14 ],
+        "value" : 1
+      }
+    }, {
+      "kind" : "VarDef",
+      "location" : [ 13, 5, 13, 16 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 13, 5, 13, 10 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 13, 5, 13, 5 ],
+          "errorMsg" : "Duplicate declaration of identifier in same scope: b",
+          "name" : "b"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 13, 8, 13, 10 ],
+          "className" : "str"
+        }
+      },
+      "value" : {
+        "kind" : "StringLiteral",
+        "location" : [ 13, 14, 13, 16 ],
+        "value" : "b"
+      }
+    } ],
+    "statements" : [ {
+      "kind" : "ReturnStmt",
+      "location" : [ 14, 5, 14, 12 ],
+      "value" : {
+        "kind" : "Identifier",
+        "location" : [ 14, 12, 14, 12 ],
+        "name" : "a"
+      }
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 16, 1, 26, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 16, 7, 16, 13 ],
+      "name" : "Vehicle"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 16, 15, 16, 20 ],
+      "name" : "object"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 17, 5, 17, 19 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 17, 5, 17, 15 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 17, 5, 17, 10 ],
+          "name" : "wheels"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 17, 13, 17, 15 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 17, 19, 17, 19 ],
+        "value" : 4
+      }
+    }, {
+      "kind" : "VarDef",
+      "location" : [ 18, 5, 18, 19 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 18, 5, 18, 15 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 18, 5, 18, 10 ],
+          "errorMsg" : "Duplicate declaration of identifier in same scope: wheels",
+          "name" : "wheels"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 18, 13, 18, 15 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 18, 19, 18, 19 ],
+        "value" : 3
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 20, 5, 21, 27 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 20, 9, 20, 13 ],
+        "name" : "drive"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 20, 15, 20, 29 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 20, 15, 20, 18 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 20, 21, 20, 29 ],
+          "className" : "Vehicle"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 20, 35, 20, 37 ],
+        "className" : "int"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 21, 9, 21, 26 ],
+        "value" : {
+          "kind" : "MemberExpr",
+          "location" : [ 21, 16, 21, 26 ],
+          "object" : {
+            "kind" : "Identifier",
+            "location" : [ 21, 16, 21, 19 ],
+            "name" : "self"
+          },
+          "member" : {
+            "kind" : "Identifier",
+            "location" : [ 21, 21, 21, 26 ],
+            "name" : "wheels"
+          }
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 23, 5, 24, 17 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 23, 9, 23, 13 ],
+        "errorMsg" : "Duplicate declaration of identifier in same scope: drive",
+        "name" : "drive"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 23, 15, 23, 29 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 23, 15, 23, 18 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 23, 21, 23, 29 ],
+          "className" : "Vehicle"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 23, 35, 23, 37 ],
+        "className" : "int"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 24, 9, 24, 16 ],
+        "value" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 24, 16, 24, 16 ],
+          "value" : 0
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 26, 1, 27, 13 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 26, 5, 26, 7 ],
+      "errorMsg" : "Duplicate declaration of identifier in same scope: len",
+      "name" : "len"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 26, 9, 26, 17 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 26, 9, 26, 9 ],
+        "name" : "x"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 26, 12, 26, 17 ],
+        "className" : "object"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 26, 23, 26, 25 ],
+      "className" : "int"
+    },
+    "declarations" : [ ],
+    "statements" : [ {
+      "kind" : "ReturnStmt",
+      "location" : [ 27, 5, 27, 12 ],
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 27, 12, 27, 12 ],
+        "value" : 0
+      }
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 29, 1, 30, 9 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 29, 7, 29, 9 ],
+      "errorMsg" : "Duplicate declaration of identifier in same scope: str",
+      "name" : "str"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 29, 11, 29, 16 ],
+      "name" : "object"
+    },
+    "declarations" : [ ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 33, 1, 37, 13 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 33, 5, 33, 8 ],
+      "name" : "make"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 33, 10, 33, 21 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 33, 10, 33, 16 ],
+        "errorMsg" : "Cannot shadow class name: Vehicle",
+        "name" : "Vehicle"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 33, 19, 33, 21 ],
+        "className" : "int"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 33, 27, 33, 29 ],
+      "className" : "int"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 34, 5, 34, 23 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 34, 5, 34, 16 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 34, 5, 34, 10 ],
+          "errorMsg" : "Cannot shadow class name: object",
+          "name" : "object"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 34, 13, 34, 16 ],
+          "className" : "bool"
+        }
+      },
+      "value" : {
+        "kind" : "BooleanLiteral",
+        "location" : [ 34, 20, 34, 23 ],
+        "value" : true
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 35, 5, 36, 20 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 35, 9, 35, 11 ],
+        "errorMsg" : "Cannot shadow class name: int",
+        "name" : "int"
+      },
+      "params" : [ ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 35, 18, 35, 21 ],
+        "className" : "bool"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 36, 9, 36, 19 ],
+        "value" : {
+          "kind" : "BooleanLiteral",
+          "location" : [ 36, 16, 36, 19 ],
+          "value" : true
+        }
+      } ]
+    } ],
+    "statements" : [ {
+      "kind" : "ReturnStmt",
+      "location" : [ 37, 5, 37, 12 ],
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 37, 12, 37, 12 ],
+        "value" : 0
+      }
+    } ]
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 40, 1, 40, 14 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 40, 1, 40, 10 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 40, 1, 40, 5 ],
+        "name" : "total"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 40, 8, 40, 10 ],
+        "className" : "int"
+      }
+    },
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 40, 14, 40, 14 ],
+      "value" : 0
+    }
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 42, 1, 54, 19 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 42, 5, 42, 9 ],
+      "name" : "outer"
+    },
+    "params" : [ ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 42, 16, 42, 18 ],
+      "className" : "int"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 43, 5, 43, 24 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 43, 5, 43, 20 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 43, 5, 43, 15 ],
+          "name" : "inner_value"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 43, 18, 43, 20 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 43, 24, 43, 24 ],
+        "value" : 1
+      }
+    }, {
+      "kind" : "GlobalDecl",
+      "location" : [ 44, 5, 44, 16 ],
+      "variable" : {
+        "kind" : "Identifier",
+        "location" : [ 44, 12, 44, 16 ],
+        "name" : "total"
+      }
+    }, {
+      "kind" : "GlobalDecl",
+      "location" : [ 45, 5, 45, 18 ],
+      "variable" : {
+        "kind" : "Identifier",
+        "location" : [ 45, 12, 45, 18 ],
+        "errorMsg" : "Not a global variable: missing",
+        "name" : "missing"
+      }
+    }, {
+      "kind" : "GlobalDecl",
+      "location" : [ 46, 5, 46, 16 ],
+      "variable" : {
+        "kind" : "Identifier",
+        "location" : [ 46, 12, 46, 16 ],
+        "errorMsg" : "Not a global variable: outer",
+        "name" : "outer"
+      }
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 48, 5, 52, 27 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 48, 9, 48, 13 ],
+        "name" : "inner"
+      },
+      "params" : [ ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 48, 20, 48, 22 ],
+        "className" : "int"
+      },
+      "declarations" : [ {
+        "kind" : "NonLocalDecl",
+        "location" : [ 49, 9, 49, 28 ],
+        "variable" : {
+          "kind" : "Identifier",
+          "location" : [ 49, 18, 49, 28 ],
+          "name" : "inner_value"
+        }
+      }, {
+        "kind" : "NonLocalDecl",
+        "location" : [ 50, 9, 50, 22 ],
+        "variable" : {
+          "kind" : "Identifier",
+          "location" : [ 50, 18, 50, 22 ],
+          "errorMsg" : "Not a nonlocal variable: total",
+          "name" : "total"
+        }
+      }, {
+        "kind" : "NonLocalDecl",
+        "location" : [ 51, 9, 51, 24 ],
+        "variable" : {
+          "kind" : "Identifier",
+          "location" : [ 51, 18, 51, 24 ],
+          "errorMsg" : "Not a nonlocal variable: nothing",
+          "name" : "nothing"
+        }
+      } ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 52, 9, 52, 26 ],
+        "value" : {
+          "kind" : "Identifier",
+          "location" : [ 52, 16, 52, 26 ],
+          "name" : "inner_value"
+        }
+      } ]
+    } ],
+    "statements" : [ {
+      "kind" : "ReturnStmt",
+      "location" : [ 54, 5, 54, 18 ],
+      "value" : {
+        "kind" : "CallExpr",
+        "location" : [ 54, 12, 54, 18 ],
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 54, 12, 54, 16 ],
+          "name" : "inner"
+        },
+        "args" : [ ]
+      }
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 57, 1, 58, 9 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 57, 7, 57, 9 ],
+      "name" : "Car"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 57, 11, 57, 15 ],
+      "errorMsg" : "Super-class not defined: Truck",
+      "name" : "Truck"
+    },
+    "declarations" : [ ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 60, 1, 61, 9 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 60, 7, 60, 10 ],
+      "name" : "Bike"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 60, 12, 60, 16 ],
+      "errorMsg" : "Super-class must be a class: total",
+      "name" : "total"
+    },
+    "declarations" : [ ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 63, 1, 64, 9 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 63, 7, 63, 12 ],
+      "name" : "Number"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 63, 14, 63, 16 ],
+      "errorMsg" : "Cannot extend special class: int",
+      "name" : "int"
+    },
+    "declarations" : [ ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 66, 1, 69, 70 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 66, 7, 66, 11 ],
+      "name" : "Truck"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 66, 13, 66, 19 ],
+      "name" : "Vehicle"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 68, 5, 68, 19 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 68, 5, 68, 15 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 68, 5, 68, 10 ],
+          "errorMsg" : "Cannot re-define attribute: wheels",
+          "name" : "wheels"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 68, 13, 68, 15 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 68, 19, 68, 19 ],
+        "value" : 6
+      }
+    }, {
+      "kind" : "VarDef",
+      "location" : [ 69, 5, 69, 23 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 69, 5, 69, 15 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 69, 5, 69, 9 ],
+          "errorMsg" : "Cannot re-define attribute: drive",
+          "name" : "drive"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 69, 12, 69, 15 ],
+          "className" : "bool"
+        }
+      },
+      "value" : {
+        "kind" : "BooleanLiteral",
+        "location" : [ 69, 19, 69, 23 ],
+        "value" : false
+      }
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 71, 1, 79, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 71, 7, 71, 9 ],
+      "name" : "Bus"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 71, 11, 71, 17 ],
+      "name" : "Vehicle"
+    },
+    "declarations" : [ {
+      "kind" : "FuncDef",
+      "location" : [ 73, 5, 74, 17 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 73, 9, 73, 13 ],
+        "errorMsg" : "First parameter of the following method must be of the enclosing class: board",
+        "name" : "board"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 73, 15, 73, 29 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 73, 15, 73, 18 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 73, 21, 73, 29 ],
+          "className" : "Vehicle"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 73, 35, 73, 37 ],
+        "className" : "int"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 74, 9, 74, 16 ],
+        "value" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 74, 16, 74, 16 ],
+          "value" : 0
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 76, 5, 77, 17 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 76, 9, 76, 13 ],
+        "errorMsg" : "First parameter of the following method must be of the enclosing class: leave",
+        "name" : "leave"
+      },
+      "params" : [ ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 76, 20, 76, 22 ],
+        "className" : "int"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 77, 9, 77, 16 ],
+        "value" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 77, 16, 77, 16 ],
+          "value" : 0
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 79, 1, 84, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 79, 7, 79, 10 ],
+      "name" : "Tram"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 79, 12, 79, 18 ],
+      "name" : "Vehicle"
+    },
+    "declarations" : [ {
+      "kind" : "FuncDef",
+      "location" : [ 81, 5, 82, 21 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 81, 9, 81, 13 ],
+        "errorMsg" : "Method overridden with different type signature: drive",
+        "name" : "drive"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 81, 15, 81, 26 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 81, 15, 81, 18 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 81, 21, 81, 26 ],
+          "className" : "Tram"
+        }
+      }, {
+        "kind" : "TypedVar",
+        "location" : [ 81, 29, 81, 38 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 81, 29, 81, 33 ],
+          "name" : "speed"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 81, 36, 81, 38 ],
+          "className" : "int"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 81, 44, 81, 46 ],
+        "className" : "int"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 82, 9, 82, 20 ],
+        "value" : {
+          "kind" : "Identifier",
+          "location" : [ 82, 16, 82, 20 ],
+          "name" : "speed"
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "ClassDef",
+    "location" : [ 84, 1, 92, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 84, 7, 84, 11 ],
+      "name" : "Train"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 84, 13, 84, 19 ],
+      "name" : "Vehicle"
+    },
+    "declarations" : [ {
+      "kind" : "FuncDef",
+      "location" : [ 85, 5, 86, 20 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 85, 9, 85, 13 ],
+        "errorMsg" : "Method overridden with different type signature: drive",
+        "name" : "drive"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 85, 15, 85, 27 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 85, 15, 85, 18 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 85, 21, 85, 27 ],
+          "className" : "Train"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 85, 33, 85, 36 ],
+        "className" : "bool"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 86, 9, 86, 19 ],
+        "value" : {
+          "kind" : "BooleanLiteral",
+          "location" : [ 86, 16, 86, 19 ],
+          "value" : true
+        }
+      } ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 88, 5, 89, 17 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 88, 9, 88, 14 ],
+        "errorMsg" : "Cannot re-define attribute: wheels",
+        "name" : "wheels"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 88, 16, 88, 28 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 88, 16, 88, 19 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 88, 22, 88, 28 ],
+          "className" : "Train"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 88, 34, 88, 36 ],
+        "className" : "int"
+      },
+      "declarations" : [ ],
+      "statements" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 89, 9, 89, 16 ],
+        "value" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 89, 16, 89, 16 ],
+          "value" : 8
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 92, 1, 98, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 92, 5, 92, 8 ],
+      "errorMsg" : "All paths in this function/method must have a return statement: sign",
+      "name" : "sign"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 92, 10, 92, 15 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 92, 10, 92, 10 ],
+        "name" : "n"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 92, 13, 92, 15 ],
+        "className" : "int"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 92, 21, 92, 23 ],
+      "className" : "int"
+    },
+    "declarations" : [ ],
+    "statements" : [ {
+      "kind" : "IfStmt",
+      "location" : [ 93, 5, 98, 0 ],
+      "condition" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 93, 8, 93, 12 ],
+        "left" : {
+          "kind" : "Identifier",
+          "location" : [ 93, 8, 93, 8 ],
+          "name" : "n"
+        },
+        "operator" : ">",
+        "right" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 93, 12, 93, 12 ],
+          "value" : 0
+        }
+      },
+      "thenBody" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 94, 9, 94, 16 ],
+        "value" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 94, 16, 94, 16 ],
+          "value" : 1
+        }
+      } ],
+      "elseBody" : [ {
+        "kind" : "IfStmt",
+        "location" : [ 95, 5, 98, 0 ],
+        "condition" : {
+          "kind" : "BinaryExpr",
+          "location" : [ 95, 10, 95, 14 ],
+          "left" : {
+            "kind" : "Identifier",
+            "location" : [ 95, 10, 95, 10 ],
+            "name" : "n"
+          },
+          "operator" : "<",
+          "right" : {
+            "kind" : "IntegerLiteral",
+            "location" : [ 95, 14, 95, 14 ],
+            "value" : 0
+          }
+        },
+        "thenBody" : [ {
+          "kind" : "ReturnStmt",
+          "location" : [ 96, 9, 96, 17 ],
+          "value" : {
+            "kind" : "UnaryExpr",
+            "location" : [ 96, 16, 96, 17 ],
+            "operator" : "-",
+            "operand" : {
+              "kind" : "IntegerLiteral",
+              "location" : [ 96, 17, 96, 17 ],
+              "value" : 1
+            }
+          }
+        } ],
+        "elseBody" : [ ]
+      } ]
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 98, 1, 103, 0 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 98, 5, 98, 13 ],
+      "errorMsg" : "All paths in this function/method must have a return statement: loop_only",
+      "name" : "loop_only"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 98, 15, 98, 20 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 98, 15, 98, 15 ],
+        "name" : "n"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 98, 18, 98, 20 ],
+        "className" : "int"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 98, 26, 98, 28 ],
+      "className" : "str"
+    },
+    "declarations" : [ ],
+    "statements" : [ {
+      "kind" : "WhileStmt",
+      "location" : [ 99, 5, 103, 0 ],
+      "condition" : {
+        "kind" : "BinaryExpr",
+        "location" : [ 99, 11, 99, 15 ],
+        "left" : {
+          "kind" : "Identifier",
+          "location" : [ 99, 11, 99, 11 ],
+          "name" : "n"
+        },
+        "operator" : ">",
+        "right" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 99, 15, 99, 15 ],
+          "value" : 0
+        }
+      },
+      "body" : [ {
+        "kind" : "ReturnStmt",
+        "location" : [ 100, 9, 100, 25 ],
+        "value" : {
+          "kind" : "StringLiteral",
+          "location" : [ 100, 16, 100, 25 ],
+          "value" : "positive"
+        }
+      } ]
+    } ]
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 103, 1, 103, 23 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 103, 1, 103, 16 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 103, 1, 103, 6 ],
+        "name" : "garage"
+      },
+      "type" : {
+        "kind" : "ListType",
+        "location" : [ 103, 9, 103, 16 ],
+        "elementType" : {
+          "kind" : "ClassType",
+          "location" : [ 103, 10, 103, 15 ],
+          "errorMsg" : "Invalid type annotation; there is no class named: Garage",
+          "className" : "Garage"
+        }
+      }
+    },
+    "value" : {
+      "kind" : "NoneLiteral",
+      "location" : [ 103, 20, 103, 23 ]
+    }
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 105, 1, 107, 16 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 105, 5, 105, 8 ],
+      "name" : "park"
+    },
+    "params" : [ {
+      "kind" : "TypedVar",
+      "location" : [ 105, 10, 105, 17 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 105, 10, 105, 10 ],
+        "name" : "v"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 105, 13, 105, 17 ],
+        "errorMsg" : "Invalid type annotation; there is no class named: Plane",
+        "className" : "Plane"
+      }
+    } ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 105, 23, 105, 28 ],
+      "errorMsg" : "Invalid type annotation; there is no class named: Hangar",
+      "className" : "Hangar"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 106, 5, 106, 25 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 106, 5, 106, 18 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 106, 5, 106, 8 ],
+          "name" : "spot"
+        },
+        "type" : {
+          "kind" : "ListType",
+          "location" : [ 106, 11, 106, 18 ],
+          "elementType" : {
+            "kind" : "ListType",
+            "location" : [ 106, 12, 106, 17 ],
+            "elementType" : {
+              "kind" : "ClassType",
+              "location" : [ 106, 13, 106, 16 ],
+              "errorMsg" : "Invalid type annotation; there is no class named: Spot",
+              "className" : "Spot"
+            }
+          }
+        }
+      },
+      "value" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 106, 22, 106, 25 ]
+      }
+    } ],
+    "statements" : [ {
+      "kind" : "ReturnStmt",
+      "location" : [ 107, 5, 107, 15 ],
+      "value" : {
+        "kind" : "NoneLiteral",
+        "location" : [ 107, 12, 107, 15 ]
+      }
+    } ]
+  } ],
+  "statements" : [ ],
+  "errors" : {
+    "errors" : [ {
+      "kind" : "CompilerError",
+      "location" : [ 9, 1, 9, 5 ],
+      "message" : "Duplicate declaration of identifier in same scope: count"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 26, 5, 26, 7 ],
+      "message" : "Duplicate declaration of identifier in same scope: len"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 29, 7, 29, 9 ],
+      "message" : "Duplicate declaration of identifier in same scope: str"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 57, 11, 57, 15 ],
+      "message" : "Super-class not defined: Truck"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 60, 12, 60, 16 ],
+      "message" : "Super-class must be a class: total"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 63, 14, 63, 16 ],
+      "message" : "Cannot extend special class: int"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 18, 5, 18, 10 ],
+      "message" : "Duplicate declaration of identifier in same scope: wheels"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 23, 9, 23, 13 ],
+      "message" : "Duplicate declaration of identifier in same scope: drive"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 68, 5, 68, 10 ],
+      "message" : "Cannot re-define attribute: wheels"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 69, 5, 69, 9 ],
+      "message" : "Cannot re-define attribute: drive"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 73, 9, 73, 13 ],
+      "message" : "First parameter of the following method must be of the enclosing class: board"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 76, 9, 76, 13 ],
+      "message" : "First parameter of the following method must be of the enclosing class: leave"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 81, 9, 81, 13 ],
+      "message" : "Method overridden with different type signature: drive"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 85, 9, 85, 13 ],
+      "message" : "Method overridden with different type signature: drive"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 88, 9, 88, 14 ],
+      "message" : "Cannot re-define attribute: wheels"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 11, 20, 11, 20 ],
+      "message" : "Duplicate declaration of identifier in same scope: a"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 13, 5, 13, 5 ],
+      "message" : "Duplicate declaration of identifier in same scope: b"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 33, 10, 33, 16 ],
+      "message" : "Cannot shadow class name: Vehicle"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 34, 5, 34, 10 ],
+      "message" : "Cannot shadow class name: object"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 35, 9, 35, 11 ],
+      "message" : "Cannot shadow class name: int"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 45, 12, 45, 18 ],
+      "message" : "Not a global variable: missing"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 46, 12, 46, 16 ],
+      "message" : "Not a global variable: outer"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 50, 18, 50, 22 ],
+      "message" : "Not a nonlocal variable: total"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 51, 18, 51, 24 ],
+      "message" : "Not a nonlocal variable: nothing"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 103, 10, 103, 15 ],
+      "message" : "Invalid type annotation; there is no class named: Garage"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 105, 13, 105, 17 ],
+      "message" : "Invalid type annotation; there is no class named: Plane"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 105, 23, 105, 28 ],
+      "message" : "Invalid type annotation; there is no class named: Hangar"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 106, 13, 106, 16 ],
+      "message" : "Invalid type annotation; there is no class named: Spot"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 92, 5, 92, 8 ],
+      "message" : "All paths in this function/method must have a return statement: sign"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 98, 5, 98, 13 ],
+      "message" : "All paths in this function/method must have a return statement: loop_only"
+    } ],
+    "kind" : "Errors",
+    "location" : [ 0, 0, 0, 0 ]
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "kind" : "Program",
+  "location" : [ 2, 1, 12, 6 ],
+  "declarations" : [ {
+    "kind" : "VarDef",
+    "location" : [ 2, 1, 2, 9 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 2, 1, 2, 5 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 2, 1, 2, 1 ],
+        "name" : "x"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 2, 3, 2, 5 ],
+        "className" : "int"
+      }
+    },
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 2, 9, 2, 9 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 1
+    }
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 3, 1, 8, 13 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 3, 5, 3, 5 ],
+      "name" : "f"
+    },
+    "params" : [ ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 3, 12, 3, 14 ],
+      "className" : "int"
+    },
+    "declarations" : [ ],
+    "statements" : [ {
+      "kind" : "AssignStmt",
+      "location" : [ 4, 5, 4, 9 ],
+      "targets" : [ {
+        "kind" : "Identifier",
+        "location" : [ 4, 5, 4, 5 ],
+        "errorMsg" : "Not a variable: w",
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "object"
+        },
+        "name" : "w"
+      } ],
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 4, 9, 4, 9 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 3
+      }
+    }, {
+      "kind" : "AssignStmt",
+      "location" : [ 5, 5, 5, 9 ],
+      "targets" : [ {
+        "kind" : "Identifier",
+        "location" : [ 5, 5, 5, 5 ],
+        "errorMsg" : "Cannot assign to variable that is not explicitly declared in this scope: x",
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "name" : "x"
+      } ],
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 5, 9, 5, 9 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 2
+      }
+    }, {
+      "kind" : "ForStmt",
+      "location" : [ 6, 5, 8, 4 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 6, 9, 6, 9 ],
+        "errorMsg" : "Cannot assign to variable that is not explicitly declared in this scope: x",
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "name" : "x"
+      },
+      "iterable" : {
+        "kind" : "ListExpr",
+        "location" : [ 6, 14, 6, 16 ],
+        "inferredType" : {
+          "kind" : "ListValueType",
+          "elementType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          }
+        },
+        "elements" : [ {
+          "kind" : "IntegerLiteral",
+          "location" : [ 6, 15, 6, 15 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "value" : 1
+        } ]
+      },
+      "body" : [ ]
+    }, {
+      "kind" : "ReturnStmt",
+      "location" : [ 8, 5, 8, 12 ],
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 8, 12, 8, 12 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 1
+      }
+    } ]
+  }, {
+    "kind" : "FuncDef",
+    "location" : [ 9, 1, 10, 10 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 9, 5, 9, 5 ],
+      "name" : "g"
+    },
+    "params" : [ ],
+    "returnType" : {
+      "kind" : "ClassType",
+      "location" : [ 9, 8, 9, 8 ],
+      "className" : "<None>"
+    },
+    "declarations" : [ ],
+    "statements" : [ {
+      "kind" : "AssignStmt",
+      "location" : [ 10, 5, 10, 9 ],
+      "targets" : [ {
+        "kind" : "Identifier",
+        "location" : [ 10, 5, 10, 5 ],
+        "errorMsg" : "Not a variable: f",
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "object"
+        },
+        "name" : "f"
+      } ],
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 10, 9, 10, 9 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 1
+      }
+    } ]
+  } ],
+  "statements" : [ {
+    "kind" : "AssignStmt",
+    "location" : [ 11, 1, 11, 9 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 11, 1, 11, 5 ],
+      "errorMsg" : "Not a variable: print",
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "object"
+      },
+      "name" : "print"
+    } ],
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 11, 9, 11, 9 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 1
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 12, 1, 12, 5 ],
+    "targets" : [ {
+      "kind" : "Identifier",
+      "location" : [ 12, 1, 12, 1 ],
+      "errorMsg" : "Not a variable: f",
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "object"
+      },
+      "name" : "f"
+    } ],
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 12, 5, 12, 5 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 2
+    }
+  } ],
+  "errors" : {
+    "errors" : [ {
+      "kind" : "CompilerError",
+      "location" : [ 4, 5, 4, 5 ],
+      "message" : "Not a variable: w"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 5, 5, 5, 5 ],
+      "message" : "Cannot assign to variable that is not explicitly declared in this scope: x"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 6, 9, 6, 9 ],
+      "message" : "Cannot assign to variable that is not explicitly declared in this scope: x"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 10, 5, 10, 5 ],
+      "message" : "Not a variable: f"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 11, 1, 11, 5 ],
+      "message" : "Not a variable: print"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 12, 1, 12, 1 ],
+      "message" : "Not a variable: f"
+    } ],
+    "kind" : "Errors",
+    "location" : [ 0, 0, 0, 0 ]
+  }
+}

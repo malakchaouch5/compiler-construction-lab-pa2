@@ -1,0 +1,232 @@
+{
+  "kind" : "Program",
+  "location" : [ 2, 1, 16, 1 ],
+  "declarations" : [ {
+    "kind" : "VarDef",
+    "location" : [ 2, 1, 2, 9 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 2, 1, 2, 5 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 2, 1, 2, 1 ],
+        "name" : "x"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 2, 3, 2, 5 ],
+        "className" : "int"
+      }
+    },
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 2, 9, 2, 9 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 1
+    }
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 3, 1, 3, 10 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 3, 1, 3, 5 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 3, 1, 3, 1 ],
+        "name" : "s"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 3, 3, 3, 5 ],
+        "className" : "str"
+      }
+    },
+    "value" : {
+      "kind" : "StringLiteral",
+      "location" : [ 3, 9, 3, 10 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "str"
+      },
+      "value" : ""
+    }
+  } ],
+  "statements" : [ {
+    "kind" : "ForStmt",
+    "location" : [ 4, 1, 6, 0 ],
+    "errorMsg" : "Cannot iterate over value of type `int`",
+    "identifier" : {
+      "kind" : "Identifier",
+      "location" : [ 4, 5, 4, 5 ],
+      "name" : "x"
+    },
+    "iterable" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 4, 10, 4, 10 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 5
+    },
+    "body" : [ ]
+  }, {
+    "kind" : "ForStmt",
+    "location" : [ 6, 1, 8, 0 ],
+    "errorMsg" : "Expected type `int`; got type `str`",
+    "identifier" : {
+      "kind" : "Identifier",
+      "location" : [ 6, 5, 6, 5 ],
+      "name" : "x"
+    },
+    "iterable" : {
+      "kind" : "ListExpr",
+      "location" : [ 6, 10, 6, 14 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        }
+      },
+      "elements" : [ {
+        "kind" : "StringLiteral",
+        "location" : [ 6, 11, 6, 13 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "str"
+        },
+        "value" : "a"
+      } ]
+    },
+    "body" : [ ]
+  }, {
+    "kind" : "ForStmt",
+    "location" : [ 8, 1, 10, 0 ],
+    "identifier" : {
+      "kind" : "Identifier",
+      "location" : [ 8, 5, 8, 5 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "str"
+      },
+      "name" : "s"
+    },
+    "iterable" : {
+      "kind" : "StringLiteral",
+      "location" : [ 8, 10, 8, 14 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "str"
+      },
+      "value" : "abc"
+    },
+    "body" : [ ]
+  }, {
+    "kind" : "ForStmt",
+    "location" : [ 10, 1, 12, 0 ],
+    "errorMsg" : "Not a variable: y",
+    "identifier" : {
+      "kind" : "Identifier",
+      "location" : [ 10, 5, 10, 5 ],
+      "name" : "y"
+    },
+    "iterable" : {
+      "kind" : "ListExpr",
+      "location" : [ 10, 10, 10, 12 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        }
+      },
+      "elements" : [ {
+        "kind" : "IntegerLiteral",
+        "location" : [ 10, 11, 10, 11 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 1
+      } ]
+    },
+    "body" : [ ]
+  }, {
+    "kind" : "ForStmt",
+    "location" : [ 12, 1, 14, 0 ],
+    "errorMsg" : "Expected type `int`; got type `<None>`",
+    "identifier" : {
+      "kind" : "Identifier",
+      "location" : [ 12, 5, 12, 5 ],
+      "name" : "x"
+    },
+    "iterable" : {
+      "kind" : "ListExpr",
+      "location" : [ 12, 10, 12, 15 ],
+      "inferredType" : {
+        "kind" : "ListValueType",
+        "elementType" : {
+          "kind" : "ClassValueType",
+          "className" : "<None>"
+        }
+      },
+      "elements" : [ {
+        "kind" : "NoneLiteral",
+        "location" : [ 12, 11, 12, 14 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "<None>"
+        }
+      } ]
+    },
+    "body" : [ ]
+  }, {
+    "kind" : "ForStmt",
+    "location" : [ 14, 1, 16, 1 ],
+    "errorMsg" : "Cannot iterate over value of type `int`",
+    "identifier" : {
+      "kind" : "Identifier",
+      "location" : [ 14, 5, 14, 5 ],
+      "name" : "z"
+    },
+    "iterable" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 14, 10, 14, 10 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 5
+    },
+    "body" : [ ]
+  } ],
+  "errors" : {
+    "errors" : [ {
+      "kind" : "CompilerError",
+      "location" : [ 4, 1, 6, 0 ],
+      "message" : "Cannot iterate over value of type `int`"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 6, 1, 8, 0 ],
+      "message" : "Expected type `int`; got type `str`"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 10, 1, 12, 0 ],
+      "message" : "Not a variable: y"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 12, 1, 14, 0 ],
+      "message" : "Expected type `int`; got type `<None>`"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 14, 1, 16, 1 ],
+      "message" : "Cannot iterate over value of type `int`"
+    } ],
+    "kind" : "Errors",
+    "location" : [ 0, 0, 0, 0 ]
+  }
+}

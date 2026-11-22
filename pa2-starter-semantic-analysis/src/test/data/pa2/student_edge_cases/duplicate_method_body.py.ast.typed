@@ -1,0 +1,153 @@
+{
+  "kind" : "Program",
+  "location" : [ 2, 1, 11, 2 ],
+  "declarations" : [ {
+    "kind" : "ClassDef",
+    "location" : [ 2, 1, 11, 1 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 2, 7, 2, 7 ],
+      "name" : "A"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 2, 9, 2, 14 ],
+      "name" : "object"
+    },
+    "declarations" : [ {
+      "kind" : "FuncDef",
+      "location" : [ 3, 5, 4, 13 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 3, 9, 3, 9 ],
+        "name" : "m"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 3, 11, 3, 18 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 3, 11, 3, 14 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 3, 16, 3, 18 ],
+          "className" : "A"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 3, 20, 3, 20 ],
+        "className" : "<None>"
+      },
+      "declarations" : [ ],
+      "statements" : [ ]
+    }, {
+      "kind" : "FuncDef",
+      "location" : [ 5, 5, 10, 13 ],
+      "name" : {
+        "kind" : "Identifier",
+        "location" : [ 5, 9, 5, 9 ],
+        "errorMsg" : "Duplicate declaration of identifier in same scope: m",
+        "name" : "m"
+      },
+      "params" : [ {
+        "kind" : "TypedVar",
+        "location" : [ 5, 11, 5, 18 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 5, 11, 5, 14 ],
+          "name" : "self"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 5, 16, 5, 18 ],
+          "className" : "A"
+        }
+      } ],
+      "returnType" : {
+        "kind" : "ClassType",
+        "location" : [ 5, 24, 5, 26 ],
+        "className" : "int"
+      },
+      "declarations" : [ {
+        "kind" : "VarDef",
+        "location" : [ 6, 9, 6, 17 ],
+        "var" : {
+          "kind" : "TypedVar",
+          "location" : [ 6, 9, 6, 13 ],
+          "identifier" : {
+            "kind" : "Identifier",
+            "location" : [ 6, 9, 6, 9 ],
+            "name" : "y"
+          },
+          "type" : {
+            "kind" : "ClassType",
+            "location" : [ 6, 11, 6, 13 ],
+            "className" : "int"
+          }
+        },
+        "value" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 6, 17, 6, 17 ],
+          "value" : 1
+        }
+      }, {
+        "kind" : "VarDef",
+        "location" : [ 7, 9, 7, 17 ],
+        "var" : {
+          "kind" : "TypedVar",
+          "location" : [ 7, 9, 7, 13 ],
+          "identifier" : {
+            "kind" : "Identifier",
+            "location" : [ 7, 9, 7, 9 ],
+            "name" : "y"
+          },
+          "type" : {
+            "kind" : "ClassType",
+            "location" : [ 7, 11, 7, 13 ],
+            "className" : "int"
+          }
+        },
+        "value" : {
+          "kind" : "IntegerLiteral",
+          "location" : [ 7, 17, 7, 17 ],
+          "value" : 1
+        }
+      }, {
+        "kind" : "FuncDef",
+        "location" : [ 8, 9, 9, 17 ],
+        "name" : {
+          "kind" : "Identifier",
+          "location" : [ 8, 13, 8, 13 ],
+          "errorMsg" : "All paths in this function/method must have a return statement: h",
+          "name" : "h"
+        },
+        "params" : [ ],
+        "returnType" : {
+          "kind" : "ClassType",
+          "location" : [ 8, 20, 8, 22 ],
+          "className" : "int"
+        },
+        "declarations" : [ ],
+        "statements" : [ ]
+      } ],
+      "statements" : [ ]
+    } ]
+  } ],
+  "statements" : [ ],
+  "errors" : {
+    "errors" : [ {
+      "kind" : "CompilerError",
+      "location" : [ 5, 9, 5, 9 ],
+      "message" : "Duplicate declaration of identifier in same scope: m"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 8, 13, 8, 13 ],
+      "message" : "All paths in this function/method must have a return statement: h"
+    } ],
+    "kind" : "Errors",
+    "location" : [ 0, 0, 0, 0 ]
+  }
+}

@@ -1,0 +1,407 @@
+{
+  "kind" : "Program",
+  "location" : [ 2, 1, 13, 13 ],
+  "declarations" : [ {
+    "kind" : "ClassDef",
+    "location" : [ 2, 1, 3, 14 ],
+    "name" : {
+      "kind" : "Identifier",
+      "location" : [ 2, 7, 2, 7 ],
+      "name" : "A"
+    },
+    "superClass" : {
+      "kind" : "Identifier",
+      "location" : [ 2, 9, 2, 14 ],
+      "name" : "object"
+    },
+    "declarations" : [ {
+      "kind" : "VarDef",
+      "location" : [ 3, 5, 3, 13 ],
+      "var" : {
+        "kind" : "TypedVar",
+        "location" : [ 3, 5, 3, 9 ],
+        "identifier" : {
+          "kind" : "Identifier",
+          "location" : [ 3, 5, 3, 5 ],
+          "name" : "x"
+        },
+        "type" : {
+          "kind" : "ClassType",
+          "location" : [ 3, 7, 3, 9 ],
+          "className" : "int"
+        }
+      },
+      "value" : {
+        "kind" : "IntegerLiteral",
+        "location" : [ 3, 13, 3, 13 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 0
+      }
+    } ]
+  }, {
+    "kind" : "VarDef",
+    "location" : [ 4, 1, 4, 9 ],
+    "var" : {
+      "kind" : "TypedVar",
+      "location" : [ 4, 1, 4, 5 ],
+      "identifier" : {
+        "kind" : "Identifier",
+        "location" : [ 4, 1, 4, 1 ],
+        "name" : "x"
+      },
+      "type" : {
+        "kind" : "ClassType",
+        "location" : [ 4, 3, 4, 5 ],
+        "className" : "int"
+      }
+    },
+    "value" : {
+      "kind" : "IntegerLiteral",
+      "location" : [ 4, 9, 4, 9 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "value" : 0
+    }
+  } ],
+  "statements" : [ {
+    "kind" : "ExprStmt",
+    "location" : [ 5, 1, 5, 4 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 5, 1, 5, 4 ],
+      "errorMsg" : "Expected 0 arguments; got 1",
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "A"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 5, 1, 5, 1 ],
+        "name" : "A"
+      },
+      "args" : [ {
+        "kind" : "IntegerLiteral",
+        "location" : [ 5, 3, 5, 3 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 1
+      } ]
+    }
+  }, {
+    "kind" : "AssignStmt",
+    "location" : [ 6, 1, 6, 12 ],
+    "errorMsg" : "Expected type `int`; got type `bool`",
+    "targets" : [ {
+      "kind" : "MemberExpr",
+      "location" : [ 6, 1, 6, 5 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "object" : {
+        "kind" : "CallExpr",
+        "location" : [ 6, 1, 6, 3 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "A"
+        },
+        "function" : {
+          "kind" : "Identifier",
+          "location" : [ 6, 1, 6, 1 ],
+          "name" : "A"
+        },
+        "args" : [ ]
+      },
+      "member" : {
+        "kind" : "Identifier",
+        "location" : [ 6, 5, 6, 5 ],
+        "name" : "x"
+      }
+    } ],
+    "value" : {
+      "kind" : "BooleanLiteral",
+      "location" : [ 6, 9, 6, 12 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "bool"
+      },
+      "value" : true
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 7, 1, 7, 14 ],
+    "expr" : {
+      "kind" : "MethodCallExpr",
+      "location" : [ 7, 1, 7, 14 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      },
+      "method" : {
+        "kind" : "MemberExpr",
+        "location" : [ 7, 1, 7, 12 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        },
+        "object" : {
+          "kind" : "CallExpr",
+          "location" : [ 7, 1, 7, 3 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "A"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 7, 1, 7, 1 ],
+            "name" : "A"
+          },
+          "args" : [ ]
+        },
+        "member" : {
+          "kind" : "Identifier",
+          "location" : [ 7, 5, 7, 12 ],
+          "name" : "__init__"
+        }
+      },
+      "args" : [ ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 8, 1, 8, 15 ],
+    "expr" : {
+      "kind" : "MethodCallExpr",
+      "location" : [ 8, 1, 8, 15 ],
+      "errorMsg" : "Expected 0 arguments; got 1",
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      },
+      "method" : {
+        "kind" : "MemberExpr",
+        "location" : [ 8, 1, 8, 12 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        },
+        "object" : {
+          "kind" : "CallExpr",
+          "location" : [ 8, 1, 8, 3 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "A"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 8, 1, 8, 1 ],
+            "name" : "A"
+          },
+          "args" : [ ]
+        },
+        "member" : {
+          "kind" : "Identifier",
+          "location" : [ 8, 5, 8, 12 ],
+          "name" : "__init__"
+        }
+      },
+      "args" : [ {
+        "kind" : "IntegerLiteral",
+        "location" : [ 8, 14, 8, 14 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 1
+      } ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 9, 1, 9, 19 ],
+    "expr" : {
+      "kind" : "MethodCallExpr",
+      "location" : [ 9, 1, 9, 19 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      },
+      "method" : {
+        "kind" : "MemberExpr",
+        "location" : [ 9, 1, 9, 17 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        },
+        "object" : {
+          "kind" : "CallExpr",
+          "location" : [ 9, 1, 9, 8 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          },
+          "function" : {
+            "kind" : "Identifier",
+            "location" : [ 9, 1, 9, 6 ],
+            "name" : "object"
+          },
+          "args" : [ ]
+        },
+        "member" : {
+          "kind" : "Identifier",
+          "location" : [ 9, 10, 9, 17 ],
+          "name" : "__init__"
+        }
+      },
+      "args" : [ ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 10, 1, 10, 5 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 10, 1, 10, 5 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "int"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 10, 1, 10, 3 ],
+        "name" : "int"
+      },
+      "args" : [ ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 11, 1, 11, 5 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 11, 1, 11, 5 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "str"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 11, 1, 11, 3 ],
+        "name" : "str"
+      },
+      "args" : [ ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 12, 1, 12, 7 ],
+    "expr" : {
+      "kind" : "CallExpr",
+      "location" : [ 12, 1, 12, 7 ],
+      "errorMsg" : "Expected 0 arguments; got 1",
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "bool"
+      },
+      "function" : {
+        "kind" : "Identifier",
+        "location" : [ 12, 1, 12, 4 ],
+        "name" : "bool"
+      },
+      "args" : [ {
+        "kind" : "IntegerLiteral",
+        "location" : [ 12, 6, 12, 6 ],
+        "inferredType" : {
+          "kind" : "ClassValueType",
+          "className" : "int"
+        },
+        "value" : 1
+      } ]
+    }
+  }, {
+    "kind" : "ExprStmt",
+    "location" : [ 13, 1, 13, 12 ],
+    "expr" : {
+      "kind" : "MethodCallExpr",
+      "location" : [ 13, 1, 13, 12 ],
+      "inferredType" : {
+        "kind" : "ClassValueType",
+        "className" : "<None>"
+      },
+      "method" : {
+        "kind" : "MemberExpr",
+        "location" : [ 13, 1, 13, 10 ],
+        "inferredType" : {
+          "kind" : "FuncType",
+          "parameters" : [ {
+            "kind" : "ClassValueType",
+            "className" : "object"
+          } ],
+          "returnType" : {
+            "kind" : "ClassValueType",
+            "className" : "<None>"
+          }
+        },
+        "object" : {
+          "kind" : "Identifier",
+          "location" : [ 13, 1, 13, 1 ],
+          "inferredType" : {
+            "kind" : "ClassValueType",
+            "className" : "int"
+          },
+          "name" : "x"
+        },
+        "member" : {
+          "kind" : "Identifier",
+          "location" : [ 13, 3, 13, 10 ],
+          "name" : "__init__"
+        }
+      },
+      "args" : [ ]
+    }
+  } ],
+  "errors" : {
+    "errors" : [ {
+      "kind" : "CompilerError",
+      "location" : [ 5, 1, 5, 4 ],
+      "message" : "Expected 0 arguments; got 1"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 6, 1, 6, 12 ],
+      "message" : "Expected type `int`; got type `bool`"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 8, 1, 8, 15 ],
+      "message" : "Expected 0 arguments; got 1"
+    }, {
+      "kind" : "CompilerError",
+      "location" : [ 12, 1, 12, 7 ],
+      "message" : "Expected 0 arguments; got 1"
+    } ],
+    "kind" : "Errors",
+    "location" : [ 0, 0, 0, 0 ]
+  }
+}
